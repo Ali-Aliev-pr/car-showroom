@@ -1,0 +1,816 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="style.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+  <link
+    rel="stylesheet"
+    href="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.css"
+  />
+  <script src="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.js"></script>
+  <script src="./nice-select2/dist/js/nice-select2.js"></script>
+  <link rel="stylesheet" href="./nice-select2/dist/css/nice-select2.css">
+
+  <link rel="stylesheet" href="./dist/nouislider.min.css">
+  <script src="./dist/nouislider.min.js"></script>
+  <script src="https://unpkg.com/imask"></script>
+  <title>100UP</title>
+</head>
+<body>
+  <header class="header">
+    <section class="header__block">
+      <div class="header__block__left">
+        <h1>ГосАвто Трейд</h1>
+        <p class="header__under__text">Автомобили с пробегом</p>
+      </div>
+      <div class="header__block__right">
+        <div class="header__block__right__item">
+          <p class="header__block__right__item__text">8 800 496-45-23</p>
+          <p class="header__under__text">Звонок бесплатный по России</p>
+        </div>
+        <div class="header__block__right__item">
+          <p class="header__block__right__item__text">8 800 496-45-23</p>
+          <p class="header__under__text">МКАД, 44 км (внешняя сторона)</p>
+        </div>
+        <div class="header__block__right__item">
+          <p class="header__block__right__item__text">8 800 496-45-23</p>
+          <p class="header__under__text">МКАД, 44 км (внешняя сторона)</p>
+        </div>
+      </div>
+    </section>
+  </header>
+  <nav class="nav">
+    <section class="nav__block">
+      <div class="nav__block__left">
+        <p class="nav__block__left__text">Автомобили в наличии</p>
+        <p class="nav__block__left__text">Выкуп автомобилей</p>
+        <p class="nav__block__left__text">Выгоды и акции</p>
+        <p class="nav__block__left__text">Автокредитование</p>
+        <p class="nav__block__left__text">Контакты</p>
+      </div>
+      <div class="nav__block__right">
+        <img src="./img/start2.svg" alt="">
+        <p class="nav__block__right__text">Избранное</p>
+      </div>
+    </section>
+  </nav>
+  <main class="main">
+    <section class="main__slider">
+      <div class="swiper mySwiper">
+        <div class="swiper-wrapper">
+          <div class="swiper-slide">
+            <div class="main__slider__block">
+              <p class="main__slider__block__title">Срочный выкуп авто в ГосАвтоТрейд</p>
+              <ul>
+                <li>
+                  <img src="./img/galka.svg" alt="">
+                  <p>Эксперсс-оценка</p>
+                </li>
+                <li>
+                  <img src="./img/galka.svg" alt="">
+                  <p>Бесплатная диагностика</p>
+                </li>
+                <li>
+                  <img src="./img/galka.svg" alt="">
+                  <p>Деньги сразу</p>
+                </li>
+              </ul>
+            </div>
+          </div>
+          <div class="swiper-slide">
+            <div class="main__slider__block">
+              <p class="main__slider__block__title">Срочный выкуп авто в ГосАвтоТрейд</p>
+              <ul>
+                <li>
+                  <img src="./img/galka.svg" alt="">
+                  <p>Эксперсс-оценка</p>
+                </li>
+                <li>
+                  <img src="./img/galka.svg" alt="">
+                  <p>Бесплатная диагностика</p>
+                </li>
+                <li>
+                  <img src="./img/galka.svg" alt="">
+                  <p>Деньги сразу</p>
+                </li>
+              </ul>
+            </div>
+          </div>
+          <div class="swiper-slide">
+            <div class="main__slider__block">
+              <p class="main__slider__block__title">Срочный выкуп авто в ГосАвтоТрейд</p>
+              <ul>
+                <li>
+                  <img src="./img/galka.svg" alt="">
+                  <p>Эксперсс-оценка</p>
+                </li>
+                <li>
+                  <img src="./img/galka.svg" alt="">
+                  <p>Бесплатная диагностика</p>
+                </li>
+                <li>
+                  <img src="./img/galka.svg" alt="">
+                  <p>Деньги сразу</p>
+                </li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="swiper-pagination"></div>
+    </section>
+    <section class="main__sellectors">
+      <div class="main__sellectors__block" style="width: 202px;">
+        <p>Марка</p>
+        <select class="nice-select" style="display: none !important;">
+          <option data-display="Select">Nothing</option>
+          <option value="1">Some option</option>
+          <option value="2">Another option</option>
+          <option value="3" disabled>A disabled option</option>
+          <option value="4">Potato</option>
+        </select>
+      </div>
+      <div class="main__sellectors__block" style="width: 202px;">
+        <p>Модель</p>
+        <select class="nice-select nice-select2" style="display: none !important;">
+          <option data-display="Select">Nothing</option>
+          <option value="1">Some option</option>
+          <option value="2">Another option</option>
+          <option value="3" disabled>A disabled option</option>
+          <option value="4">Potato</option>
+        </select>
+      </div>
+      <div class="main__sellectors__block">
+        <p>Год</p>
+        <div class="main__sellectors__block__bottom">
+          <select class="nice-select nice-select-small nice-select3" style="display: none !important;">
+            <option data-display="Select">Год от</option>
+            <option value="1">Some option</option>
+            <option value="2">Another option</option>
+            <option value="3" disabled>A disabled option</option>
+            <option value="4">Potato</option>
+          </select>
+          <select class="nice-select nice-select-small nice-select4" style="display: none !important;">
+            <option data-display="Select">Год до</option>
+            <option value="1">Some option</option>
+            <option value="2">Another option</option>
+            <option value="3" disabled>A disabled option</option>
+            <option value="4">Potato</option>
+          </select>
+        </div>
+      </div>
+      <div class="main__sellectors__block">
+        <p>Цена</p>
+        <div class="main__sellectors__block__bottom">
+          <select class="nice-select nice-select-small nice-select5" style="display: none !important;">
+            <option data-display="Select">Цена от</option>
+            <option value="1">Some option</option>
+            <option value="2">Another option</option>
+            <option value="3" disabled>A disabled option</option>
+            <option value="4">Potato</option>
+          </select>
+          <select class="nice-select nice-select-small nice-select6" style="display: none !important;">
+            <option data-display="Select">Цена до</option>
+            <option value="1">Some option</option>
+            <option value="2">Another option</option>
+            <option value="3" disabled>A disabled option</option>
+            <option value="4">Potato</option>
+          </select>
+        </div>
+      </div>
+      <div class="main__sellectors__end">
+        <p>1029 авто</p>
+        <div>
+          <svg width="22" height="22" viewBox="0 0 22 22" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <path fill-rule="evenodd" clip-rule="evenodd" d="M10.9999 21.3996C8.24165 21.3996 5.59637 20.3039 3.64599 18.3535C1.69561 16.4031 0.599903 13.7579 0.599903 10.9996C0.599903 8.24136 1.69561 5.59608 3.64599 3.6457C5.59637 1.69532 8.24165 0.599609 10.9999 0.599609C13.7582 0.599609 16.4034 1.69532 18.3538 3.6457C20.3042 5.59608 21.3999 8.24136 21.3999 10.9996C21.3999 13.7579 20.3042 16.4031 18.3538 18.3535C16.4034 20.3039 13.7582 21.3996 10.9999 21.3996V21.3996ZM9.6999 4.49961C10.6168 4.49948 11.5175 4.74181 12.3106 5.20203C13.1037 5.66225 13.7609 6.324 14.2158 7.12017C14.6706 7.91634 14.9069 8.81863 14.9005 9.73555C14.8942 10.6525 14.6455 11.5514 14.1797 12.3412L17.119 15.2792C17.3629 15.523 17.5 15.8536 17.5002 16.1985C17.5002 16.3693 17.4667 16.5383 17.4014 16.6961C17.3361 16.8539 17.2404 16.9973 17.1197 17.1181C16.999 17.2388 16.8556 17.3347 16.6979 17.4001C16.5402 17.4655 16.3711 17.4992 16.2004 17.4992C15.8555 17.4993 15.5247 17.3625 15.2808 17.1187L12.3415 14.1794C11.6527 14.5854 10.8796 14.827 10.0822 14.8856C9.2848 14.9442 8.48464 14.8181 7.74391 14.5172C7.00317 14.2163 6.34181 13.7486 5.81122 13.1505C5.28063 12.5523 4.8951 11.8399 4.68461 11.0686C4.47412 10.2973 4.44432 9.48781 4.59754 8.7031C4.75076 7.91838 5.08287 7.17956 5.56806 6.54407C6.05324 5.90858 6.67843 5.39353 7.39504 5.03894C8.11165 4.68436 8.90037 4.4998 9.6999 4.49961V4.49961Z" fill="white"/>
+            </svg>
+            
+        </div>
+      </div>     
+    </section>
+    <section class="main__buy">
+      <p class="main__buy__title">
+        Купить авто с пробегом в Москве
+      </p>
+      <div class="main__buy__marks">
+        <div class="main__buy__marks__mark">
+          <img src="./img/mark1.svg" alt="">
+          <p class="main__buy__marks__mark__title">Chery</p>
+          <p class="main__buy__marks__mark__count">24</p>
+        </div>
+        <div class="main__buy__marks__mark">
+          <img src="./img/mark2.svg" alt="">
+          <p class="main__buy__marks__mark__title">Chevrolet</p>
+          <p class="main__buy__marks__mark__count">24</p>
+        </div>
+        <div class="main__buy__marks__mark">
+          <img src="./img/mark3.svg" alt="">
+          <p class="main__buy__marks__mark__title">Datsun</p>
+          <p class="main__buy__marks__mark__count">24</p>
+        </div>
+        <div class="main__buy__marks__mark">
+          <img src="./img/mark4.svg" alt="">
+          <p class="main__buy__marks__mark__title">Ford</p>
+          <p class="main__buy__marks__mark__count">24</p>
+        </div>
+        <div class="main__buy__marks__mark">
+          <img src="./img/mark5.svg" alt="">
+          <p class="main__buy__marks__mark__title">Geely</p>
+          <p class="main__buy__marks__mark__count">24</p>
+        </div>
+        <div class="main__buy__marks__mark">
+          <img src="./img/mark6.svg" alt="">
+          <p class="main__buy__marks__mark__title">Great Wall</p>
+          <p class="main__buy__marks__mark__count">24</p>
+        </div>
+        <div class="main__buy__marks__mark">
+          <img src="./img/mark7.svg" alt="">
+          <p class="main__buy__marks__mark__title">Hyundai</p>
+          <p class="main__buy__marks__mark__count">24</p>
+        </div>
+        <div class="main__buy__marks__mark">
+          <img src="./img/mark7.svg" alt="">
+          <p class="main__buy__marks__mark__title">Great Wall</p>
+          <p class="main__buy__marks__mark__count">24</p>
+        </div>
+        <div class="main__buy__marks__mark">
+          <img src="./img/mark7.svg" alt="">
+          <p class="main__buy__marks__mark__title">Hyundai</p>
+          <p class="main__buy__marks__mark__count">24</p>
+        </div>
+        <div class="main__buy__marks__mark">
+          <img src="./img/mark7.svg" alt="">
+          <p class="main__buy__marks__mark__title">Hyundai</p>
+          <p class="main__buy__marks__mark__count">24</p>
+        </div>
+      </div>
+      <div class="main__buy__marks">
+        <div class="main__buy__marks__mark">
+          <img src="./img/mark1.svg" alt="">
+          <p class="main__buy__marks__mark__title">Chery</p>
+          <p class="main__buy__marks__mark__count">24</p>
+        </div>
+        <div class="main__buy__marks__mark">
+          <img src="./img/mark2.svg" alt="">
+          <p class="main__buy__marks__mark__title">Chevrolet</p>
+          <p class="main__buy__marks__mark__count">24</p>
+        </div>
+        <div class="main__buy__marks__mark">
+          <img src="./img/mark3.svg" alt="">
+          <p class="main__buy__marks__mark__title">Datsun</p>
+          <p class="main__buy__marks__mark__count">24</p>
+        </div>
+        <div class="main__buy__marks__mark">
+          <img src="./img/mark4.svg" alt="">
+          <p class="main__buy__marks__mark__title">Ford</p>
+          <p class="main__buy__marks__mark__count">24</p>
+        </div>
+        <div class="main__buy__marks__mark">
+          <img src="./img/mark5.svg" alt="">
+          <p class="main__buy__marks__mark__title">Geely</p>
+          <p class="main__buy__marks__mark__count">24</p>
+        </div>
+        <div class="main__buy__marks__mark">
+          <img src="./img/mark6.svg" alt="">
+          <p class="main__buy__marks__mark__title">Great Wall</p>
+          <p class="main__buy__marks__mark__count">24</p>
+        </div>
+        <div class="main__buy__marks__mark">
+          <img src="./img/mark7.svg" alt="">
+          <p class="main__buy__marks__mark__title">Hyundai</p>
+          <p class="main__buy__marks__mark__count">24</p>
+        </div>
+        <div class="main__buy__marks__mark">
+          <img src="./img/mark7.svg" alt="">
+          <p class="main__buy__marks__mark__title">Great Wall</p>
+          <p class="main__buy__marks__mark__count">24</p>
+        </div>
+        <div class="main__buy__marks__mark">
+          <img src="./img/mark7.svg" alt="">
+          <p class="main__buy__marks__mark__title">Hyundai</p>
+          <p class="main__buy__marks__mark__count">24</p>
+        </div>
+        <div class="main__buy__marks__mark">
+          <img src="./img/mark7.svg" alt="">
+          <p class="main__buy__marks__mark__title">Hyundai</p>
+          <p class="main__buy__marks__mark__count">24</p>
+        </div>
+      </div>
+      <div class="main__buy__marks">
+        <div class="main__buy__marks__mark">
+          <img src="./img/mark1.svg" alt="">
+          <p class="main__buy__marks__mark__title">Chery</p>
+          <p class="main__buy__marks__mark__count">24</p>
+        </div>
+        <div class="main__buy__marks__mark">
+          <img src="./img/mark2.svg" alt="">
+          <p class="main__buy__marks__mark__title">Chevrolet</p>
+          <p class="main__buy__marks__mark__count">24</p>
+        </div>
+        <div class="main__buy__marks__mark">
+          <img src="./img/mark3.svg" alt="">
+          <p class="main__buy__marks__mark__title">Datsun</p>
+          <p class="main__buy__marks__mark__count">24</p>
+        </div>
+        <div class="main__buy__marks__mark">
+          <img src="./img/mark4.svg" alt="">
+          <p class="main__buy__marks__mark__title">Ford</p>
+          <p class="main__buy__marks__mark__count">24</p>
+        </div>
+        <div class="main__buy__marks__mark">
+          <img src="./img/mark5.svg" alt="">
+          <p class="main__buy__marks__mark__title">Geely</p>
+          <p class="main__buy__marks__mark__count">24</p>
+        </div>
+        <div class="main__buy__marks__mark">
+          <img src="./img/mark6.svg" alt="">
+          <p class="main__buy__marks__mark__title">Great Wall</p>
+          <p class="main__buy__marks__mark__count">24</p>
+        </div>
+        <div class="main__buy__marks__mark">
+          <img src="./img/mark7.svg" alt="">
+          <p class="main__buy__marks__mark__title">Hyundai</p>
+          <p class="main__buy__marks__mark__count">24</p>
+        </div>
+        <div class="main__buy__marks__mark">
+          <img src="./img/mark7.svg" alt="">
+          <p class="main__buy__marks__mark__title">Great Wall</p>
+          <p class="main__buy__marks__mark__count">24</p>
+        </div>
+        <div class="main__buy__marks__mark">
+          <img src="./img/mark7.svg" alt="">
+          <p class="main__buy__marks__mark__title">Hyundai</p>
+          <p class="main__buy__marks__mark__count">24</p>
+        </div>
+        <div class="main__buy__marks__mark">
+          <img src="./img/mark7.svg" alt="">
+          <p class="main__buy__marks__mark__title">Hyundai</p>
+          <p class="main__buy__marks__mark__count">24</p>
+        </div>
+      </div>
+      <div class="main__buy__buttons">
+        <div class="main__buy__buttons__button">
+          <svg width="16" height="16" viewBox="0 0 16 16" fill="currentColor" xmlns="http://www.w3.org/2000/svg">
+            <path fill-rule="evenodd" clip-rule="evenodd" d="M16 6.00008C16.0003 6.93725 15.781 7.86145 15.3598 8.69862C14.9386 9.53579 14.3271 10.2627 13.5744 10.821C12.8216 11.3792 11.9486 11.7535 11.0252 11.9136C10.1018 12.0737 9.15376 12.0153 8.257 11.7431L8 12.0001L7 13.0001L6 14.0001H4V16.0001H0V12.0001L4.257 7.74308C4.00745 6.91809 3.93857 6.04902 4.05504 5.19502C4.17152 4.34102 4.47062 3.52215 4.93199 2.79412C5.39336 2.0661 6.00616 1.44602 6.72869 0.976095C7.45122 0.506169 8.26652 0.197426 9.11908 0.0708807C9.97164 -0.0556644 10.8415 0.0029588 11.6693 0.24276C12.4972 0.482562 13.2637 0.897912 13.9166 1.46054C14.5696 2.02317 15.0936 2.71987 15.4531 3.50322C15.8127 4.28656 15.9992 5.13817 16 6.00008V6.00008ZM10 2.00008C9.73478 2.00008 9.48043 2.10543 9.29289 2.29297C9.10536 2.48051 9 2.73486 9 3.00008C9 3.26529 9.10536 3.51965 9.29289 3.70718C9.48043 3.89472 9.73478 4.00008 10 4.00008C10.5304 4.00008 11.0391 4.21079 11.4142 4.58586C11.7893 4.96093 12 5.46964 12 6.00008C12 6.26529 12.1054 6.51965 12.2929 6.70718C12.4804 6.89472 12.7348 7.00008 13 7.00008C13.2652 7.00008 13.5196 6.89472 13.7071 6.70718C13.8946 6.51965 14 6.26529 14 6.00008C14 4.93921 13.5786 3.92179 12.8284 3.17165C12.0783 2.4215 11.0609 2.00008 10 2.00008Z"/>
+          </svg>     
+          <p>Выкуп авто</p>
+        </div>
+        <div class="main__buy__buttons__button">
+          <svg width="18" height="19" viewBox="0 0 18 19" fill="currentColor" xmlns="http://www.w3.org/2000/svg">
+            <path d="M1.582 6.99993H1V1.99993L1.582 6.99993ZM1.582 6.99993C2.24585 5.35806 3.43568 3.98284 4.96503 3.08979C6.49438 2.19674 8.2768 1.83634 10.033 2.06507C11.7891 2.29379 13.4198 3.09872 14.6694 4.3537C15.919 5.60869 16.7168 7.24279 16.938 8.99993M1.582 6.99993H6M16.419 12.9999H17V17.9999L16.419 12.9999ZM16.419 12.9999C15.7542 14.6408 14.564 16.015 13.0348 16.9072C11.5056 17.7995 9.72374 18.1594 7.9681 17.9308C6.21246 17.7022 4.5822 16.8978 3.33253 15.6437C2.08287 14.3895 1.28435 12.7564 1.062 10.9999M16.419 12.9999H12" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+          </svg>            
+          <p>Обмен авто</p>
+        </div>
+        <div class="main__buy__buttons__button">
+          <svg width="16" height="16" viewBox="0 0 16 16" fill="currentColor" xmlns="http://www.w3.org/2000/svg">
+            <path fill-rule="evenodd" clip-rule="evenodd" d="M4 0C3.73478 0 3.48043 0.105357 3.29289 0.292893C3.10536 0.48043 3 0.734784 3 1V2H2C1.46957 2 0.960859 2.21071 0.585786 2.58579C0.210714 2.96086 0 3.46957 0 4V14C0 14.5304 0.210714 15.0391 0.585786 15.4142C0.960859 15.7893 1.46957 16 2 16H14C14.5304 16 15.0391 15.7893 15.4142 15.4142C15.7893 15.0391 16 14.5304 16 14V4C16 3.46957 15.7893 2.96086 15.4142 2.58579C15.0391 2.21071 14.5304 2 14 2H13V1C13 0.734784 12.8946 0.48043 12.7071 0.292893C12.5196 0.105357 12.2652 0 12 0C11.7348 0 11.4804 0.105357 11.2929 0.292893C11.1054 0.48043 11 0.734784 11 1V2H5V1C5 0.734784 4.89464 0.48043 4.70711 0.292893C4.51957 0.105357 4.26522 0 4 0ZM4 5C3.73478 5 3.48043 5.10536 3.29289 5.29289C3.10536 5.48043 3 5.73478 3 6C3 6.26522 3.10536 6.51957 3.29289 6.70711C3.48043 6.89464 3.73478 7 4 7H12C12.2652 7 12.5196 6.89464 12.7071 6.70711C12.8946 6.51957 13 6.26522 13 6C13 5.73478 12.8946 5.48043 12.7071 5.29289C12.5196 5.10536 12.2652 5 12 5H4Z"/>
+          </svg>             
+          <p>Оценить авто</p>
+        </div>
+        <div class="main__buy__buttons__button">
+          <svg width="20" height="20" viewBox="0 0 20 20" fill="currentColor" xmlns="http://www.w3.org/2000/svg">
+            <path d="M19 19L13 13L19 19ZM15 8C15 8.91925 14.8189 9.82951 14.4672 10.6788C14.1154 11.5281 13.5998 12.2997 12.9497 12.9497C12.2997 13.5998 11.5281 14.1154 10.6788 14.4672C9.82951 14.8189 8.91925 15 8 15C7.08075 15 6.1705 14.8189 5.32122 14.4672C4.47194 14.1154 3.70026 13.5998 3.05025 12.9497C2.40024 12.2997 1.88463 11.5281 1.53284 10.6788C1.18106 9.82951 1 8.91925 1 8C1 6.14348 1.7375 4.36301 3.05025 3.05025C4.36301 1.7375 6.14348 1 8 1C9.85652 1 11.637 1.7375 12.9497 3.05025C14.2625 4.36301 15 6.14348 15 8Z" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+            </svg>            
+          <p>Подобрать авто</p>
+        </div>
+      </div>
+    </section>
+    <section class="main__buy__selection">
+      <p class="main__buy__selection__text">Подбор по <span class="main__buy__selection__text__span">пробегу</span></p>
+      <div class="main__buy__selection__filter">
+        <div class="main__buy__selection__filter__btn">
+          до 250 000 ₽
+        </div>
+        <div class="main__buy__selection__filter__btn">
+          до 500 000 ₽
+        </div>
+        <div class="main__buy__selection__filter__btn">
+          до 700 000 ₽
+        </div>
+        <div class="main__buy__selection__filter__btn">
+          до 850 000 ₽
+        </div>
+        <div class="main__buy__selection__filter__btn">
+          до 1 000 000 ₽
+        </div>
+      </div>
+      <div class="main__buy__selection__cards">
+        <div class="main__buy__selection__cards__card">
+          <img src="./img/car.svg" alt="">
+          <p class="main__buy__selection__cards__card__name">Opel Astra</p>
+          <p class="main__buy__selection__cards__card__description">135 500 км, Внедорожник 5 дв., CVT, Бензин</p>
+          <div class="main__buy__selection__cards__card__prices">
+            <p class="main__buy__selection__cards__card__price">1 390 000 ₽</p>
+            <p class="main__buy__selection__cards__card__sale">1 790 000 ₽</p>
+          </div>
+          <div class="main__buy__selection__cards__card__redbtn">
+            <svg width="16" height="16" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+              <path fill-rule="evenodd" clip-rule="evenodd" d="M4 0C3.73478 0 3.48043 0.105357 3.29289 0.292893C3.10536 0.48043 3 0.734784 3 1V2H2C1.46957 2 0.960859 2.21071 0.585786 2.58579C0.210714 2.96086 0 3.46957 0 4V14C0 14.5304 0.210714 15.0391 0.585786 15.4142C0.960859 15.7893 1.46957 16 2 16H14C14.5304 16 15.0391 15.7893 15.4142 15.4142C15.7893 15.0391 16 14.5304 16 14V4C16 3.46957 15.7893 2.96086 15.4142 2.58579C15.0391 2.21071 14.5304 2 14 2H13V1C13 0.734784 12.8946 0.48043 12.7071 0.292893C12.5196 0.105357 12.2652 0 12 0C11.7348 0 11.4804 0.105357 11.2929 0.292893C11.1054 0.48043 11 0.734784 11 1V2H5V1C5 0.734784 4.89464 0.48043 4.70711 0.292893C4.51957 0.105357 4.26522 0 4 0V0ZM4 5C3.73478 5 3.48043 5.10536 3.29289 5.29289C3.10536 5.48043 3 5.73478 3 6C3 6.26522 3.10536 6.51957 3.29289 6.70711C3.48043 6.89464 3.73478 7 4 7H12C12.2652 7 12.5196 6.89464 12.7071 6.70711C12.8946 6.51957 13 6.26522 13 6C13 5.73478 12.8946 5.48043 12.7071 5.29289C12.5196 5.10536 12.2652 5 12 5H4Z" fill="white"/>
+              </svg>
+              <p>от 4 590 ₽ / мес</p>              
+          </div>
+          <div class="main__buy__selection__cards__card__whitebtn">
+            <p>Подробнее</p>
+          </div>
+          <div class="main__buy__selection__cards__card__overlay__leftbtn">
+            <p>VIN проверен </p>
+          </div>
+          <div class="main__buy__selection__cards__card__overlay__rightbtn">
+            <img src="./img/star.svg" alt="">
+          </div>
+        </div>
+        <div class="main__buy__selection__cards__card">
+          <img src="./img/car.svg" alt="">
+          <p class="main__buy__selection__cards__card__name">Opel Astra</p>
+          <p class="main__buy__selection__cards__card__description">135 500 км, Внедорожник 5 дв., CVT, Бензин</p>
+          <div class="main__buy__selection__cards__card__prices">
+            <p class="main__buy__selection__cards__card__price">1 390 000 ₽</p>
+            <p class="main__buy__selection__cards__card__sale">1 790 000 ₽</p>
+          </div>
+          <div class="main__buy__selection__cards__card__redbtn">
+            <svg width="16" height="16" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+              <path fill-rule="evenodd" clip-rule="evenodd" d="M4 0C3.73478 0 3.48043 0.105357 3.29289 0.292893C3.10536 0.48043 3 0.734784 3 1V2H2C1.46957 2 0.960859 2.21071 0.585786 2.58579C0.210714 2.96086 0 3.46957 0 4V14C0 14.5304 0.210714 15.0391 0.585786 15.4142C0.960859 15.7893 1.46957 16 2 16H14C14.5304 16 15.0391 15.7893 15.4142 15.4142C15.7893 15.0391 16 14.5304 16 14V4C16 3.46957 15.7893 2.96086 15.4142 2.58579C15.0391 2.21071 14.5304 2 14 2H13V1C13 0.734784 12.8946 0.48043 12.7071 0.292893C12.5196 0.105357 12.2652 0 12 0C11.7348 0 11.4804 0.105357 11.2929 0.292893C11.1054 0.48043 11 0.734784 11 1V2H5V1C5 0.734784 4.89464 0.48043 4.70711 0.292893C4.51957 0.105357 4.26522 0 4 0V0ZM4 5C3.73478 5 3.48043 5.10536 3.29289 5.29289C3.10536 5.48043 3 5.73478 3 6C3 6.26522 3.10536 6.51957 3.29289 6.70711C3.48043 6.89464 3.73478 7 4 7H12C12.2652 7 12.5196 6.89464 12.7071 6.70711C12.8946 6.51957 13 6.26522 13 6C13 5.73478 12.8946 5.48043 12.7071 5.29289C12.5196 5.10536 12.2652 5 12 5H4Z" fill="white"/>
+              </svg>
+              <p>от 4 590 ₽ / мес</p>              
+          </div>
+          <div class="main__buy__selection__cards__card__whitebtn">
+            <p>Подробнее</p>
+          </div>
+          <div class="main__buy__selection__cards__card__overlay__leftbtn">
+            <p>VIN проверен </p>
+          </div>
+          <div class="main__buy__selection__cards__card__overlay__rightbtn">
+            <img src="./img/star.svg" alt="">
+          </div>
+        </div>
+        <div class="main__buy__selection__cards__card">
+          <img src="./img/car.svg" alt="">
+          <p class="main__buy__selection__cards__card__name">Opel Astra</p>
+          <p class="main__buy__selection__cards__card__description">135 500 км, Внедорожник 5 дв., CVT, Бензин</p>
+          <div class="main__buy__selection__cards__card__prices">
+            <p class="main__buy__selection__cards__card__price">1 390 000 ₽</p>
+            <p class="main__buy__selection__cards__card__sale">1 790 000 ₽</p>
+          </div>
+          <div class="main__buy__selection__cards__card__redbtn">
+            <svg width="16" height="16" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+              <path fill-rule="evenodd" clip-rule="evenodd" d="M4 0C3.73478 0 3.48043 0.105357 3.29289 0.292893C3.10536 0.48043 3 0.734784 3 1V2H2C1.46957 2 0.960859 2.21071 0.585786 2.58579C0.210714 2.96086 0 3.46957 0 4V14C0 14.5304 0.210714 15.0391 0.585786 15.4142C0.960859 15.7893 1.46957 16 2 16H14C14.5304 16 15.0391 15.7893 15.4142 15.4142C15.7893 15.0391 16 14.5304 16 14V4C16 3.46957 15.7893 2.96086 15.4142 2.58579C15.0391 2.21071 14.5304 2 14 2H13V1C13 0.734784 12.8946 0.48043 12.7071 0.292893C12.5196 0.105357 12.2652 0 12 0C11.7348 0 11.4804 0.105357 11.2929 0.292893C11.1054 0.48043 11 0.734784 11 1V2H5V1C5 0.734784 4.89464 0.48043 4.70711 0.292893C4.51957 0.105357 4.26522 0 4 0V0ZM4 5C3.73478 5 3.48043 5.10536 3.29289 5.29289C3.10536 5.48043 3 5.73478 3 6C3 6.26522 3.10536 6.51957 3.29289 6.70711C3.48043 6.89464 3.73478 7 4 7H12C12.2652 7 12.5196 6.89464 12.7071 6.70711C12.8946 6.51957 13 6.26522 13 6C13 5.73478 12.8946 5.48043 12.7071 5.29289C12.5196 5.10536 12.2652 5 12 5H4Z" fill="white"/>
+              </svg>
+              <p>от 4 590 ₽ / мес</p>              
+          </div>
+          <div class="main__buy__selection__cards__card__whitebtn">
+            <p>Подробнее</p>
+          </div>
+          <div class="main__buy__selection__cards__card__overlay__leftbtn">
+            <p>VIN проверен </p>
+          </div>
+          <div class="main__buy__selection__cards__card__overlay__rightbtn">
+            <img src="./img/star.svg" alt="">
+          </div>
+        </div>
+        <div class="main__buy__selection__cards__card">
+          <img src="./img/car.svg" alt="">
+          <p class="main__buy__selection__cards__card__name">Opel Astra</p>
+          <p class="main__buy__selection__cards__card__description">135 500 км, Внедорожник 5 дв., CVT, Бензин</p>
+          <div class="main__buy__selection__cards__card__prices">
+            <p class="main__buy__selection__cards__card__price">1 390 000 ₽</p>
+            <p class="main__buy__selection__cards__card__sale">1 790 000 ₽</p>
+          </div>
+          <div class="main__buy__selection__cards__card__redbtn">
+            <svg width="16" height="16" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+              <path fill-rule="evenodd" clip-rule="evenodd" d="M4 0C3.73478 0 3.48043 0.105357 3.29289 0.292893C3.10536 0.48043 3 0.734784 3 1V2H2C1.46957 2 0.960859 2.21071 0.585786 2.58579C0.210714 2.96086 0 3.46957 0 4V14C0 14.5304 0.210714 15.0391 0.585786 15.4142C0.960859 15.7893 1.46957 16 2 16H14C14.5304 16 15.0391 15.7893 15.4142 15.4142C15.7893 15.0391 16 14.5304 16 14V4C16 3.46957 15.7893 2.96086 15.4142 2.58579C15.0391 2.21071 14.5304 2 14 2H13V1C13 0.734784 12.8946 0.48043 12.7071 0.292893C12.5196 0.105357 12.2652 0 12 0C11.7348 0 11.4804 0.105357 11.2929 0.292893C11.1054 0.48043 11 0.734784 11 1V2H5V1C5 0.734784 4.89464 0.48043 4.70711 0.292893C4.51957 0.105357 4.26522 0 4 0V0ZM4 5C3.73478 5 3.48043 5.10536 3.29289 5.29289C3.10536 5.48043 3 5.73478 3 6C3 6.26522 3.10536 6.51957 3.29289 6.70711C3.48043 6.89464 3.73478 7 4 7H12C12.2652 7 12.5196 6.89464 12.7071 6.70711C12.8946 6.51957 13 6.26522 13 6C13 5.73478 12.8946 5.48043 12.7071 5.29289C12.5196 5.10536 12.2652 5 12 5H4Z" fill="white"/>
+              </svg>
+              <p>от 4 590 ₽ / мес</p>              
+          </div>
+          <div class="main__buy__selection__cards__card__whitebtn">
+            <p>Подробнее</p>
+          </div>
+          <div class="main__buy__selection__cards__card__overlay__leftbtn">
+            <p>VIN проверен </p>
+          </div>
+          <div class="main__buy__selection__cards__card__overlay__rightbtn">
+            <img src="./img/star.svg" alt="">
+          </div>
+        </div>
+      </div>
+    </section>
+    <section class="main__buy__selection">
+      <p class="main__buy__selection__text">Подбор по <span class="main__buy__selection__text__span">специальной цене</span></p>
+      <div class="main__buy__selection__filter">
+        <div class="main__buy__selection__filter__btn">
+          до 250 000 ₽
+        </div>
+        <div class="main__buy__selection__filter__btn">
+          до 500 000 ₽
+        </div>
+        <div class="main__buy__selection__filter__btn">
+          до 700 000 ₽
+        </div>
+        <div class="main__buy__selection__filter__btn">
+          до 850 000 ₽
+        </div>
+        <div class="main__buy__selection__filter__btn">
+          до 1 000 000 ₽
+        </div>
+      </div>
+      <div class="main__buy__selection__cards">
+        <div class="main__buy__selection__cards__card">
+          <img src="./img/car.svg" alt="">
+          <p class="main__buy__selection__cards__card__name">Opel Astra</p>
+          <p class="main__buy__selection__cards__card__description">135 500 км, Внедорожник 5 дв., CVT, Бензин</p>
+          <div class="main__buy__selection__cards__card__prices">
+            <p class="main__buy__selection__cards__card__price">1 390 000 ₽</p>
+            <p class="main__buy__selection__cards__card__sale">1 790 000 ₽</p>
+          </div>
+          <div class="main__buy__selection__cards__card__redbtn">
+            <svg width="16" height="16" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+              <path fill-rule="evenodd" clip-rule="evenodd" d="M4 0C3.73478 0 3.48043 0.105357 3.29289 0.292893C3.10536 0.48043 3 0.734784 3 1V2H2C1.46957 2 0.960859 2.21071 0.585786 2.58579C0.210714 2.96086 0 3.46957 0 4V14C0 14.5304 0.210714 15.0391 0.585786 15.4142C0.960859 15.7893 1.46957 16 2 16H14C14.5304 16 15.0391 15.7893 15.4142 15.4142C15.7893 15.0391 16 14.5304 16 14V4C16 3.46957 15.7893 2.96086 15.4142 2.58579C15.0391 2.21071 14.5304 2 14 2H13V1C13 0.734784 12.8946 0.48043 12.7071 0.292893C12.5196 0.105357 12.2652 0 12 0C11.7348 0 11.4804 0.105357 11.2929 0.292893C11.1054 0.48043 11 0.734784 11 1V2H5V1C5 0.734784 4.89464 0.48043 4.70711 0.292893C4.51957 0.105357 4.26522 0 4 0V0ZM4 5C3.73478 5 3.48043 5.10536 3.29289 5.29289C3.10536 5.48043 3 5.73478 3 6C3 6.26522 3.10536 6.51957 3.29289 6.70711C3.48043 6.89464 3.73478 7 4 7H12C12.2652 7 12.5196 6.89464 12.7071 6.70711C12.8946 6.51957 13 6.26522 13 6C13 5.73478 12.8946 5.48043 12.7071 5.29289C12.5196 5.10536 12.2652 5 12 5H4Z" fill="white"/>
+              </svg>
+              <p>от 4 590 ₽ / мес</p>              
+          </div>
+          <div class="main__buy__selection__cards__card__whitebtn">
+            <p>Подробнее</p>
+          </div>
+          <div class="main__buy__selection__cards__card__overlay__leftbtn">
+            <p>VIN проверен </p>
+          </div>
+          <div class="main__buy__selection__cards__card__overlay__rightbtn">
+            <img src="./img/star.svg" alt="">
+          </div>
+        </div>
+        <div class="main__buy__selection__cards__card">
+          <img src="./img/car.svg" alt="">
+          <p class="main__buy__selection__cards__card__name">Opel Astra</p>
+          <p class="main__buy__selection__cards__card__description">135 500 км, Внедорожник 5 дв., CVT, Бензин</p>
+          <div class="main__buy__selection__cards__card__prices">
+            <p class="main__buy__selection__cards__card__price">1 390 000 ₽</p>
+            <p class="main__buy__selection__cards__card__sale">1 790 000 ₽</p>
+          </div>
+          <div class="main__buy__selection__cards__card__redbtn">
+            <svg width="16" height="16" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+              <path fill-rule="evenodd" clip-rule="evenodd" d="M4 0C3.73478 0 3.48043 0.105357 3.29289 0.292893C3.10536 0.48043 3 0.734784 3 1V2H2C1.46957 2 0.960859 2.21071 0.585786 2.58579C0.210714 2.96086 0 3.46957 0 4V14C0 14.5304 0.210714 15.0391 0.585786 15.4142C0.960859 15.7893 1.46957 16 2 16H14C14.5304 16 15.0391 15.7893 15.4142 15.4142C15.7893 15.0391 16 14.5304 16 14V4C16 3.46957 15.7893 2.96086 15.4142 2.58579C15.0391 2.21071 14.5304 2 14 2H13V1C13 0.734784 12.8946 0.48043 12.7071 0.292893C12.5196 0.105357 12.2652 0 12 0C11.7348 0 11.4804 0.105357 11.2929 0.292893C11.1054 0.48043 11 0.734784 11 1V2H5V1C5 0.734784 4.89464 0.48043 4.70711 0.292893C4.51957 0.105357 4.26522 0 4 0V0ZM4 5C3.73478 5 3.48043 5.10536 3.29289 5.29289C3.10536 5.48043 3 5.73478 3 6C3 6.26522 3.10536 6.51957 3.29289 6.70711C3.48043 6.89464 3.73478 7 4 7H12C12.2652 7 12.5196 6.89464 12.7071 6.70711C12.8946 6.51957 13 6.26522 13 6C13 5.73478 12.8946 5.48043 12.7071 5.29289C12.5196 5.10536 12.2652 5 12 5H4Z" fill="white"/>
+              </svg>
+              <p>от 4 590 ₽ / мес</p>              
+          </div>
+          <div class="main__buy__selection__cards__card__whitebtn">
+            <p>Подробнее</p>
+          </div>
+          <div class="main__buy__selection__cards__card__overlay__leftbtn">
+            <p>VIN проверен </p>
+          </div>
+          <div class="main__buy__selection__cards__card__overlay__rightbtn">
+            <img src="./img/star.svg" alt="">
+          </div>
+        </div>
+        <div class="main__buy__selection__cards__card">
+          <img src="./img/car.svg" alt="">
+          <p class="main__buy__selection__cards__card__name">Opel Astra</p>
+          <p class="main__buy__selection__cards__card__description">135 500 км, Внедорожник 5 дв., CVT, Бензин</p>
+          <div class="main__buy__selection__cards__card__prices">
+            <p class="main__buy__selection__cards__card__price">1 390 000 ₽</p>
+            <p class="main__buy__selection__cards__card__sale">1 790 000 ₽</p>
+          </div>
+          <div class="main__buy__selection__cards__card__redbtn">
+            <svg width="16" height="16" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+              <path fill-rule="evenodd" clip-rule="evenodd" d="M4 0C3.73478 0 3.48043 0.105357 3.29289 0.292893C3.10536 0.48043 3 0.734784 3 1V2H2C1.46957 2 0.960859 2.21071 0.585786 2.58579C0.210714 2.96086 0 3.46957 0 4V14C0 14.5304 0.210714 15.0391 0.585786 15.4142C0.960859 15.7893 1.46957 16 2 16H14C14.5304 16 15.0391 15.7893 15.4142 15.4142C15.7893 15.0391 16 14.5304 16 14V4C16 3.46957 15.7893 2.96086 15.4142 2.58579C15.0391 2.21071 14.5304 2 14 2H13V1C13 0.734784 12.8946 0.48043 12.7071 0.292893C12.5196 0.105357 12.2652 0 12 0C11.7348 0 11.4804 0.105357 11.2929 0.292893C11.1054 0.48043 11 0.734784 11 1V2H5V1C5 0.734784 4.89464 0.48043 4.70711 0.292893C4.51957 0.105357 4.26522 0 4 0V0ZM4 5C3.73478 5 3.48043 5.10536 3.29289 5.29289C3.10536 5.48043 3 5.73478 3 6C3 6.26522 3.10536 6.51957 3.29289 6.70711C3.48043 6.89464 3.73478 7 4 7H12C12.2652 7 12.5196 6.89464 12.7071 6.70711C12.8946 6.51957 13 6.26522 13 6C13 5.73478 12.8946 5.48043 12.7071 5.29289C12.5196 5.10536 12.2652 5 12 5H4Z" fill="white"/>
+              </svg>
+              <p>от 4 590 ₽ / мес</p>              
+          </div>
+          <div class="main__buy__selection__cards__card__whitebtn">
+            <p>Подробнее</p>
+          </div>
+          <div class="main__buy__selection__cards__card__overlay__leftbtn">
+            <p>VIN проверен </p>
+          </div>
+          <div class="main__buy__selection__cards__card__overlay__rightbtn">
+            <img src="./img/star.svg" alt="">
+          </div>
+        </div>
+        <div class="main__buy__selection__cards__card">
+          <img src="./img/car.svg" alt="">
+          <p class="main__buy__selection__cards__card__name">Opel Astra</p>
+          <p class="main__buy__selection__cards__card__description">135 500 км, Внедорожник 5 дв., CVT, Бензин</p>
+          <div class="main__buy__selection__cards__card__prices">
+            <p class="main__buy__selection__cards__card__price">1 390 000 ₽</p>
+            <p class="main__buy__selection__cards__card__sale">1 790 000 ₽</p>
+          </div>
+          <div class="main__buy__selection__cards__card__redbtn">
+            <svg width="16" height="16" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+              <path fill-rule="evenodd" clip-rule="evenodd" d="M4 0C3.73478 0 3.48043 0.105357 3.29289 0.292893C3.10536 0.48043 3 0.734784 3 1V2H2C1.46957 2 0.960859 2.21071 0.585786 2.58579C0.210714 2.96086 0 3.46957 0 4V14C0 14.5304 0.210714 15.0391 0.585786 15.4142C0.960859 15.7893 1.46957 16 2 16H14C14.5304 16 15.0391 15.7893 15.4142 15.4142C15.7893 15.0391 16 14.5304 16 14V4C16 3.46957 15.7893 2.96086 15.4142 2.58579C15.0391 2.21071 14.5304 2 14 2H13V1C13 0.734784 12.8946 0.48043 12.7071 0.292893C12.5196 0.105357 12.2652 0 12 0C11.7348 0 11.4804 0.105357 11.2929 0.292893C11.1054 0.48043 11 0.734784 11 1V2H5V1C5 0.734784 4.89464 0.48043 4.70711 0.292893C4.51957 0.105357 4.26522 0 4 0V0ZM4 5C3.73478 5 3.48043 5.10536 3.29289 5.29289C3.10536 5.48043 3 5.73478 3 6C3 6.26522 3.10536 6.51957 3.29289 6.70711C3.48043 6.89464 3.73478 7 4 7H12C12.2652 7 12.5196 6.89464 12.7071 6.70711C12.8946 6.51957 13 6.26522 13 6C13 5.73478 12.8946 5.48043 12.7071 5.29289C12.5196 5.10536 12.2652 5 12 5H4Z" fill="white"/>
+              </svg>
+              <p>от 4 590 ₽ / мес</p>              
+          </div>
+          <div class="main__buy__selection__cards__card__whitebtn">
+            <p>Подробнее</p>
+          </div>
+          <div class="main__buy__selection__cards__card__overlay__leftbtn">
+            <p>VIN проверен </p>
+          </div>
+          <div class="main__buy__selection__cards__card__overlay__rightbtn">
+            <img src="./img/star.svg" alt="">
+          </div>
+        </div>
+      </div>
+    </section>
+    <section class="main__credit__cal">
+      <div class="main__credit__cal__block">
+        <div class="main__credit__cal__block__left">
+          <p class="main__credit__cal__block__left__title">Расчет автокредита</p>
+          <p class="main__credit__cal__block__left__description">Расчитайте предварительный ежемесячный платеж, который вам подходит</p>
+          <p class="main__credit__cal__block__left__future__text">Стоимость вашего будущего авто</p>
+          <div class="main__credit__cal__block__left__futurecar">
+            <p class="main__credit__cal__block__left__futurecar__text"></p>
+            <label class="main__credit__cal__block__left__futurecar__input__father">
+              <input id="input-1" class="main__credit__cal__block__left__futurecar__input" value="1" min="1" max="999999" type="number">
+              <span>₽</span>
+            </label>
+          </div>
+          <div class="main__credit__cal__slider" id="range-slider"></div>
+          <div class="main__credit__cal__slider__under__slider">
+            <p>1 ₽</p>
+            <p>15 000 000 ₽</p>
+          </div>
+          <div class="main__credit__cal__block__left__vsnos">
+            <div class="main__credit__cal__block__left__vsnos__left">
+              <p class="main__credit__cal__block__left__future__textsecond">Первоначальный взнос</p>
+              <div class="main__credit__cal__block__left__vsnos__left__child">
+                <p class="main__credit__cal__block__left__vsnos__left__child__texxt__one">950 000</p>
+                <label class="main__credit__cal__block__left__futurecar__input__father">
+                  <input id="input-2" class="main__credit__cal__block__left__futurecar__input" value="950000" min="1" max="999999" type="number">
+                </label>
+              </div>
+              <div class="main__credit__cal__slider__2" id="range-slider"></div>
+              <!-- <img src="./img/smallline.svg" alt=""> -->
+            </div>
+            <div class="main__credit__cal__block__left__vsnos__right">
+              <p class="main__credit__cal__block__left__future__textsecond">Срок кредитования</p>
+              <div class="main__credit__cal__block__left__vsnos__left__child">
+                <p class="main__credit__cal__block__left__vsnos__left__texxt__two">24</p>
+                <label class="main__credit__cal__block__left__futurecar__input__father">
+                  <input id="input-3" class="main__credit__cal__block__left__futurecar__input" value="24" type="text" type="number">
+                  <!-- <span>мес</span>  -->
+                </label>
+              </div>
+              <div class="main__credit__cal__slider__3" id="range-slider"></div>
+              <!-- <img src="./img/smallline.svg" alt=""> -->
+            </div>
+          </div>
+          <div class="main__credit__cal__block__left__last__btn">
+            <p class="main__credit__cal__block__left__last__btn__first__text">Ваш платеж:</p>
+            <p class="main__credit__cal__block__left__last__btn__second__text">от <span class="main__credit__cal__block__left__last__btn__second__text__span"></span> ₽/мес</p>
+            <p class="main__credit__cal__block__left__last__btn__third__text">Данные расчета предварительные и не являются точными</p>
+          </div>
+        </div>
+        <div class="main__credit__cal__block__right">
+          <p class="main__credit__cal__block__right__text">Отправить предварительную заявку на одобрение</p>
+          <p class="main__credit__cal__block__right__description">Мы поможем подобрать лучшее предложение среди банков-партнеров</p>
+          <div class="main__credit__cal__block__right__contacts">
+            <div class="main__credit__cal__block__right__contacts__left">
+              <p>Ваше имя</p>
+              <input class="main__credit__cal__block__right__contacts__left__input" placeholder="Введите имя"/>
+            </div>
+            <div class="main__credit__cal__block__right__contacts__right">
+              <p>Номер телефона</p>
+              <input id="phone__mask" class="main__credit__cal__block__right__contacts__right__input" type="text" value="+7 ___ ___ __ __"/>
+            </div>
+          </div>
+          <div class="main__credit__cal__block__right__main__button">
+            <p>Отправить заявку</p>
+          </div>
+          <p class="main__credit__cal__block__right__bottom__text">Заполняя данную форму, вы даете соглашение на рассмотрение ваших котиков и собачков. Это обязательно и и вы никак не сможете повлиять на это, в отделе разработки нехватает пушистеньких лапок!!!</p>
+        </div>
+      </div>
+    </section>
+    <section class="main__map">
+      <div class="main__map__block">
+        <div class="main__map__texts">
+          <p class="main__map__texts__left">Точки выкупа автомобилей</p>
+          <p class="main__map__texts__right">Перейти в контакты</p>
+        </div>
+        <div class="main__map__main">
+          <div class="main__map__main__left">
+            <div class="main__map__main__left__block">
+              <p class="main__map__main__left__block__title">ГосАвтоТрейд Москва</p>
+              <p class="main__map__main__left__block__adress">Нижний Новгород, Новгородское шоссе, д. 124, к3 <span class="main__map__main__left__block__adress__span">Построить маршрут</span></p>
+              <p class="main__map__main__left__block__time">Ежедневно: с 9:00 до 21:00</p>
+              <p class="main__map__main__left__block__number">+7 499 489 – 89 – 89</p>
+            </div>
+            <div class="main__map__main__left__block">
+              <p class="main__map__main__left__block__title">ГосАвтоТрейд Москва</p>
+              <p class="main__map__main__left__block__adress">Нижний Новгород, Новгородское шоссе, д. 124, к3 <span class="main__map__main__left__block__adress__span">Построить маршрут</span></p>
+              <p class="main__map__main__left__block__time">Ежедневно: с 9:00 до 21:00</p>
+              <p class="main__map__main__left__block__number">+7 499 489 – 89 – 89</p>
+            </div>
+            <div class="main__map__main__left__block">
+              <p class="main__map__main__left__block__title">ГосАвтоТрейд Москва</p>
+              <p class="main__map__main__left__block__adress">Нижний Новгород, Новгородское шоссе, д. 124, к3 <span class="main__map__main__left__block__adress__span">Построить маршрут</span></p>
+              <p class="main__map__main__left__block__time">Ежедневно: с 9:00 до 21:00</p>
+              <p class="main__map__main__left__block__number">+7 499 489 – 89 – 89</p>
+            </div>
+          </div>
+          <div class="main__map__main__right">
+            <img src="./img/map.svg" alt="">
+          </div>
+        </div>
+      </div>
+    </section>
+    <section class="main__advantage">
+      <div class="main__advantage__block">
+        <p class="main__advantage__block__title">Преимущества покупки авто с пробегом у нас</p>
+        <div class="main__advantage__advanteges">
+          <div class="main__advantage__advanteges__block">
+            <div class="small__blocks">
+              <svg width="12" height="15" viewBox="0 0 12 15" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <path fill-rule="evenodd" clip-rule="evenodd" d="M0 2C0 1.46957 0.210714 0.960859 0.585786 0.585786C0.960859 0.210714 1.46957 0 2 0C2 0.795649 2.31607 1.55871 2.87868 2.12132C3.44129 2.68393 4.20435 3 5 3H7C7.79565 3 8.55871 2.68393 9.12132 2.12132C9.68393 1.55871 10 0.795649 10 0C10.5304 0 11.0391 0.210714 11.4142 0.585786C11.7893 0.960859 12 1.46957 12 2V13C12 13.5304 11.7893 14.0391 11.4142 14.4142C11.0391 14.7893 10.5304 15 10 15H2C1.46957 15 0.960859 14.7893 0.585786 14.4142C0.210714 14.0391 0 13.5304 0 13V2ZM9.707 7.707C9.88916 7.5184 9.98995 7.2658 9.98767 7.0036C9.9854 6.7414 9.88023 6.49059 9.69482 6.30518C9.50941 6.11977 9.2586 6.0146 8.9964 6.01233C8.7342 6.01005 8.4816 6.11084 8.293 6.293L5 9.586L3.707 8.293C3.5184 8.11084 3.2658 8.01005 3.0036 8.01233C2.7414 8.0146 2.49059 8.11977 2.30518 8.30518C2.11977 8.49059 2.0146 8.7414 2.01233 9.0036C2.01005 9.2658 2.11084 9.5184 2.293 9.707L4.293 11.707C4.48053 11.8945 4.73484 11.9998 5 11.9998C5.26516 11.9998 5.51947 11.8945 5.707 11.707L9.707 7.707Z" fill="white"/>
+                </svg>                
+            </div>
+            <p class="main__advantage__advanteges__block__title">
+              Тщательная проверка
+            </p>  
+            <p class="main__advantage__advanteges__block__description">
+              Перед продажей автомобили проходят проверку безопасности и получают необходимое сервисное обслуживание
+            </p>
+          </div>
+          <div class="main__advantage__advanteges__block">
+            <div class="small__blocks">
+              <svg width="16" height="16" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <path fill-rule="evenodd" clip-rule="evenodd" d="M16 0.999466C15.9999 0.829075 15.9563 0.661533 15.8733 0.512738C15.7902 0.363943 15.6706 0.23883 15.5256 0.149272C15.3806 0.0597132 15.2152 0.00867941 15.045 0.00101288C14.8748 -0.00665365 14.7054 0.0293013 14.553 0.105466L6.763 3.99947H3C2.20435 3.99947 1.44129 4.31554 0.87868 4.87815C0.316071 5.44076 0 6.20382 0 6.99947C0 7.79512 0.316071 8.55818 0.87868 9.12079C1.44129 9.6834 2.20435 9.99947 3 9.99947H3.28L5.051 15.3155C5.11735 15.5147 5.24472 15.6879 5.41505 15.8107C5.58538 15.9335 5.79004 15.9995 6 15.9995H7C7.26522 15.9995 7.51957 15.8941 7.70711 15.7066C7.89464 15.519 8 15.2647 8 14.9995V10.6175L14.553 13.8935C14.7054 13.9696 14.8748 14.0056 15.045 13.9979C15.2152 13.9903 15.3806 13.9392 15.5256 13.8497C15.6706 13.7601 15.7902 13.635 15.8733 13.4862C15.9563 13.3374 15.9999 13.1699 16 12.9995V0.999466Z" fill="white"/>
+                </svg>
+                
+            </div>
+            <p class="main__advantage__advanteges__block__title">
+              Выгодные условия
+            </p>  
+            <p class="main__advantage__advanteges__block__description">
+              До 2-х лет гарантии на автомобиль и до двух месяцев кредитных каникул
+            </p>
+          </div>
+          <div class="main__advantage__advanteges__block">
+            <div class="small__blocks">
+              <svg width="16" height="18" viewBox="0 0 16 18" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <path fill-rule="evenodd" clip-rule="evenodd" d="M8 0.943359C5.84496 2.87718 3.06127 3.96308 0.166 3.99936C0.0559999 4.64836 0 5.31836 0 5.99936C0 11.2244 3.34 15.6694 8 17.3164C12.66 15.6694 16 11.2244 16 5.99936C16 5.31736 15.943 4.64936 15.834 3.99836C12.9389 3.96236 10.1552 2.87682 8 0.943359ZM9 12.9994C9 13.2646 8.89464 13.5189 8.70711 13.7065C8.51957 13.894 8.26522 13.9994 8 13.9994C7.73478 13.9994 7.48043 13.894 7.29289 13.7065C7.10536 13.5189 7 13.2646 7 12.9994C7 12.7341 7.10536 12.4798 7.29289 12.2923C7.48043 12.1047 7.73478 11.9994 8 11.9994C8.26522 11.9994 8.51957 12.1047 8.70711 12.2923C8.89464 12.4798 9 12.7341 9 12.9994ZM9 5.99936C9 5.73414 8.89464 5.47979 8.70711 5.29225C8.51957 5.10472 8.26522 4.99936 8 4.99936C7.73478 4.99936 7.48043 5.10472 7.29289 5.29225C7.10536 5.47979 7 5.73414 7 5.99936V8.99936C7 9.26458 7.10536 9.51893 7.29289 9.70647C7.48043 9.894 7.73478 9.99936 8 9.99936C8.26522 9.99936 8.51957 9.894 8.70711 9.70647C8.89464 9.51893 9 9.26458 9 8.99936V5.99936Z" fill="white"/>
+                </svg>
+                
+            </div>
+            <p class="main__advantage__advanteges__block__title">
+              Никаких ошибок!
+            </p>  
+            <p class="main__advantage__advanteges__block__description">
+              Каждый автомобиль проходит проверку истории владения, в частности, на серьезные повреждения в прошлом
+            </p>
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
+  <footer class="footer">
+    <section class="footer__block">
+      <div class="footer__block__header">
+        <div class="footer__block__header__left">
+          <p class="footer__block__header__left__text">ГосАвто Трейд</p>
+          <p class="footer__block__header__left__under">Автомобили с пробегом</p>
+        </div>
+        <div class="footer__block__header__right">
+          <div class="footer__block__header__right__item">
+            <p class="footer__block__header__right__item__text">8 800 496-45-23</p>
+            <p class="footer__block__header__right__item__under">Звонок бесплатный по России</p>
+          </div>
+          <div class="footer__block__header__right__item">
+            <p class="footer__block__header__right__item__text">8 800 496-45-23</p>
+            <p class="footer__block__header__right__item__under">Звонок бесплатный по России</p>
+          </div>
+          <div class="footer__block__header__right__item">
+            <p class="footer__block__header__right__item__text">8 800 496-45-23</p>
+            <p class="footer__block__header__right__item__under">Звонок бесплатный по России</p>
+          </div>
+        </div>
+      </div>
+      <div class="footer__block__nav">
+        <p class="footer__block__nav__item">Автомобили в наличии</p>
+        <p class="footer__block__nav__item">Выкуп автомобилей</p>
+        <p class="footer__block__nav__item">Выгоды и акции</p>
+        <p class="footer__block__nav__item">Контакты</p>
+        <p class="footer__block__nav__item">Задать вопрос</p>
+      </div>
+      <p class="footer__block__text__one">Данный сайт носит исключительно информационный характер и ни при каких условиях не является публичной офертой, определяемой положениями Статьи 437 Гражданского кодекса РФ.</p>
+      <p class="footer__block__text__two">Предоставляя свои персональные данные в любых формах, а также при звонке на номера, указанные на сайте, вы даёте согласие на обработку и использование персональных данных в интересах владельца сайта. Все персональные данные подлежат обработке в соответствии с политикой конфиденциальности и защищены Федеральным законом Российской Федерации от 27 июля 2006 г. № 152-ФЗ.</p>
+      <p class="footer__block__text__three">Наш дилерский центр оказывает услуги кредитования и страхования с помощью партнеров:</p>
+      <p class="footer__block__text__four">Банк-партнер АО «Тинькофф Банк», лицензия ЦБ РФ № 2673</p>
+      <p class="footer__block__text__five">Годовая ставка по автокредиту от 18% годовых на все марки, в зависимости от условий конкретного банка, суммы займа и кредитной программы. Минимальный срок погашения от 2 до 84 месяцев. Сумма кредитования составляет от 120 000 руб. до 7 000 000 руб. Первоначальный взнос до 70%. Кредит предоставляется при учете страхования от угона и ущерба.</p>
+      <p class="footer__block__text__six">Все цены на сайте указаны с учетом скидок. **Срок проведения акций с 1 марта по 30 декабря 2022 года. Для получения подробной информации о наличии и стоимости указанных автомобилей, пожалуйста, обращайтесь к менеджерам отдела продаж или по телефону +7 (495) 859-49-67</p>
+      <p class="footer__block__text__six">ООО «АВТОЭКСПРЕСС»</p>
+      <p class="footer__block__text__six">127410, г. Москва, ул. Стандартная, д. 6, стр. 17, этаж 1 пом. I комната 10 (часть)</p>
+      <p class="footer__block__text__six">ОГРН 1187746689448</p>
+      <p class="footer__block__text__six">ИНН 9721067865</p>
+      <p class="footer__block__text__six">КПП 771501001</p>
+      <p class="footer__block__text__six">© АВТОХОЛЛZIL, 2022 г.</p>
+      <p class="footer__block__text__six">Политика конфиденциальности</p>
+    </section>
+  </footer>
+  <script src="./script.js"></script>
+</body>
+</html>
