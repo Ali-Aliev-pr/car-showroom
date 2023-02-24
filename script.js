@@ -7,14 +7,6 @@ let input2 = document.querySelector('#input-2').addEventListener("change", resul
 let input3 = document.querySelector('#input-3').addEventListener("change", result)
 let result__span = document.querySelector('.main__credit__cal__block__left__last__btn__second__text__span');
 
-function calc() {
-  document.querySelector(".main__credit__cal__block__left__futurecar__text").innerHTML = document.querySelector('.main__credit__cal__block__left__futurecar__input').value
-
-  document.querySelector(".main__credit__cal__block__left__vsnos__left__child__texxt__one").innerHTML = document.querySelector('#input-2').value
-
-  document.querySelector(".main__credit__cal__block__left__vsnos__left__texxt__two").innerHTML = document.querySelector('#input-3').value
-}
-
 function numberWithSpaces(x) {
   return x.toString().replace(/\B(?=(\d{3})+(?!\d))/g, " ");
 }
