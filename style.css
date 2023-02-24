@@ -179,7 +179,17 @@ h1 {
 }
 
 .custom_point {
-  background-color: red !important;
+  /* background-color: red !important; */
+  width: 6px !important;
+  height: 6px !important;
+  background: #FFFFFF !important;
+}
+
+.swiper-pagination-bullet-active {
+  width: 6px !important;
+  height: 20px !important;
+  background: #C92B18 !important;
+  border-radius: 10px !important;
 }
 
 .main__sellectors {
@@ -226,16 +236,25 @@ h1 {
 .main__sellectors__end div {
   background: #C92B18;
   border-radius: 8px;
-  padding: 13px;
+  width: 48px;
+  height: 48px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 
 .small__blocks {
   background: linear-gradient(136.81deg, #CA4435 9.74%, #A872D7 85.22%), #D9D9D9;
   border-radius: 10px;
-  padding-top: 22px;
+  /* padding-top: 22px;
   padding-left: 22px;
   padding-right: 22px;
-  padding-bottom: 18px;
+  padding-bottom: 18px; */
+  width: 60px;
+  height: 60px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 
 .main__sellectors__end p {
@@ -295,20 +314,25 @@ h1 {
 
 .main__buy__marks__mark {
   text-align: center;
-  width: 96px;
-
   background: #FFFFFF;
   border: 1px solid #BCBCBC;
   /* shadow */
-
   box-shadow: 0px 4px 12px rgba(187, 187, 187, 0.15);
   border-radius: 10px;
+  width: 96px;
+  height: 108px;
+  padding-top: 20px;
+  padding-bottom: 8px;
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  align-items: center;
 }
 
 .main__buy__marks__mark img {
-  padding-left: 17px;
+  /* padding-left: 17px;
   padding-right: 17px;
-  padding-top: 23px;
+  /* padding-top: 23px; */
   padding-bottom: 17px;
 }
 
