@@ -397,7 +397,6 @@ h1 {
   transition: 0.5s;
 }
 
-
 .main__buy__selection {
   margin-top: 64px;
   max-width: 1328px;
@@ -435,18 +434,19 @@ h1 {
   border: 1px solid #404252;
   border-radius: 8px;
   padding: 4px 12px 4px 12px;
-}
-
-.main__buy__selection__filter__btn {
   font-style: normal;
   font-weight: 400;
   font-size: 16px;
   line-height: 24px;
-  /* identical to box height, or 150% */
   display: flex;
   align-items: center;
   letter-spacing: 0.02em;
   color: #404252;
+}
+
+.main__buy__selection__filter__btn__selected {
+  border: 1px solid #C92B18;
+  color: #C92B18;
 }
 
 .main__buy__selection__filter__btn:hover {
@@ -464,6 +464,7 @@ h1 {
   margin-top: 24px;
   display: flex;
   /* justify-content: space-between; */
+  /* flex-wrap: wrap; */
 }
 
 .main__buy__selection__cards__card {
@@ -795,6 +796,33 @@ h1 {
   padding: 5px;
   border: none;
   background-color: #C92B18;
+}
+
+/* .noUi-handle::after {
+  content: "";
+  background-image: url(./img/slider.svg);
+  width: 100px;
+  height: 100px;
+} */
+
+.noUi-horizontal .noUi-handle:before {
+  width: 0;
+  height: 0;
+  border-left: 8px solid transparent;
+  border-right: 8px solid transparent;
+  border-bottom: 8px solid var(--primary);
+  top: 12px;
+  left: -4px;
+  background: 0 0;
+}
+
+.noUi-horizontal .noUi-handle:after {
+  top: 16px;
+  left: -6px;
+  width: 20px;
+  height: 20px;
+  border: 5px solid var(--primary);
+  border-radius: 50%;
 }
 
 .main__credit__cal__slider__under__slider {

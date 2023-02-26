@@ -31,7 +31,7 @@ function result() {
   let spaces = numberWithSpaces(final)
 
   document.querySelector('.main__credit__cal__block__left__last__btn__second__text__span').innerHTML = spaces;
-}
+};
 
 if (rangeSlider) {
   noUiSlider.create(rangeSlider, {
@@ -67,7 +67,7 @@ if (rangeSlider) {
     })
   })
 
-}
+};
 
 if (rangeSlider2) {
   noUiSlider.create(rangeSlider2, {
@@ -102,7 +102,7 @@ if (rangeSlider2) {
       setRangeSlider(index, e.currentTarget.value)
     })
   })
-}
+};
 
 if (rangeSlider3) {
   noUiSlider.create(rangeSlider3, {
@@ -137,35 +137,4 @@ if (rangeSlider3) {
       setRangeSlider(index, e.currentTarget.value)
     })
   })
-}
-
-
-// --------------------------------------
-
-var swiper = new Swiper(".mySwiper", {
-  pagination: {
-    el: ".swiper-pagination"  ,
-    clickable: true,
-    renderBullet: function (index, className) {
-      return '<span class="' + "custom_point " + className + '">'  + "</span>";
-    },
-  },
-});
-
-
-// -------------------------------------
-
-
-var element = document.getElementById('phone__mask');
-var maskOptions = {
-  mask: '+{7}(000)000-00-00'
 };
-var mask = IMask(element, maskOptions);
-
-
-NiceSelect.bind(document.querySelector(".nice-select"));
-NiceSelect.bind(document.querySelector(".nice-select2"));
-NiceSelect.bind(document.querySelector(".nice-select3"));
-NiceSelect.bind(document.querySelector(".nice-select4"));
-NiceSelect.bind(document.querySelector(".nice-select5"));
-NiceSelect.bind(document.querySelector(".nice-select6"));
