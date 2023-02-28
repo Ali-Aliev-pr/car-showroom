@@ -24,7 +24,7 @@ function hideTab() {
   })
 }
 
-function showTab(i = 1) {
+function showTab(i = 3) {
   tabs[i].classList.add('main__buy__selection__filter__btn__selected')
   // console.log(selected__tab)
 }
