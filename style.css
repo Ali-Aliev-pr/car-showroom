@@ -1369,6 +1369,15 @@ input[type=number] {
   margin-top: 15px;
 }
 
+.main__map__main__right {
+  width: 878px;
+  height: 485px;
+}
+
+.main__map__main__left__block__selected {
+  background-color: #F5F7FA;
+}
+
 @media screen and (max-width: 1024px) {
   .header {
     padding-left: 15px;

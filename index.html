@@ -264,8 +264,6 @@
           <p class="main__buy__marks__mark__title">Hyundai</p>
           <p class="main__buy__marks__mark__count">24</p>
         </div>
-      <!-- </div> -->
-      <!-- <div class="main__buy__marks"> -->
         <div class="main__buy__marks__mark">
           <img src="./img/mark1.svg" alt="">
           <p class="main__buy__marks__mark__title">Chery</p>
@@ -316,8 +314,6 @@
           <p class="main__buy__marks__mark__title">Hyundai</p>
           <p class="main__buy__marks__mark__count">24</p>
         </div>
-      <!-- </div> -->
-      <!-- <div class="main__buy__marks"> -->
         <div class="main__buy__marks__mark">
           <img src="./img/mark1.svg" alt="">
           <p class="main__buy__marks__mark__title">Chery</p>
@@ -807,27 +803,26 @@
         </div>
         <div class="main__map__main">
           <div class="main__map__main__left">
-            <div class="main__map__main__left__block">
+            <div class="main__map__main__left__block" data-geo="a">
               <p class="main__map__main__left__block__title">ГосАвтоТрейд Москва</p>
               <p class="main__map__main__left__block__adress">Нижний Новгород, Новгородское шоссе, д. 124, к3 <span class="main__map__main__left__block__adress__span">Построить маршрут</span></p>
               <p class="main__map__main__left__block__time">Ежедневно: с 9:00 до 21:00</p>
               <p class="main__map__main__left__block__number">+7 499 489 – 89 – 89</p>
             </div>
-            <div class="main__map__main__left__block">
+            <div class="main__map__main__left__block" data-geo="b">
               <p class="main__map__main__left__block__title">ГосАвтоТрейд Москва</p>
               <p class="main__map__main__left__block__adress">Нижний Новгород, Новгородское шоссе, д. 124, к3 <span class="main__map__main__left__block__adress__span">Построить маршрут</span></p>
               <p class="main__map__main__left__block__time">Ежедневно: с 9:00 до 21:00</p>
               <p class="main__map__main__left__block__number">+7 499 489 – 89 – 89</p>
             </div>
-            <div class="main__map__main__left__block">
+            <div class="main__map__main__left__block main__map__main__left__block__selected" data-geo="c">
               <p class="main__map__main__left__block__title">ГосАвтоТрейд Москва</p>
               <p class="main__map__main__left__block__adress">Нижний Новгород, Новгородское шоссе, д. 124, к3 <span class="main__map__main__left__block__adress__span">Построить маршрут</span></p>
               <p class="main__map__main__left__block__time">Ежедневно: с 9:00 до 21:00</p>
               <p class="main__map__main__left__block__number">+7 499 489 – 89 – 89</p>
             </div>
           </div>
-          <div class="main__map__main__right">
-            <img src="./img/map.svg" alt="">
+          <div class="main__map__main__right" id="map-center">
           </div>
         </div>
       </div>
@@ -930,5 +925,9 @@
   <script src="./scripts/mask.js"></script>
   <script src="./scripts/select.js"></script>
   <script src="./scripts/tabs.js"></script>
+  <script type="text/javascript" src="https://api-maps.yandex.ru/2.1/?apikey=ваш API-ключ&lang=ru_RU"
+  type="text/javascript">
+  </script>
+  <script src="./scripts/map.js"></script>
 </body>
 </html>
