@@ -1894,3 +1894,14 @@ input[type=number] {
     margin-top: 25px;
   }
 }
+
+@media screen and (max-width: 500px){
+  .main__credit__cal__block__right__bottom__text {
+      width: 357px;
+      margin-top: 20px;
+  }
+
+  .main__map__main__left__block {
+    width: 353px;
+  }
+}
