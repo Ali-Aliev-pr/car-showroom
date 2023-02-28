@@ -1906,3 +1906,9 @@ input[type=number] {
     width: 353px;
   }
 }
+
+@media screen and (max-width: 375px) {
+.main__credit__cal__block__left__last__btn__third__text {
+    font-size: 8px;
+}
+}
