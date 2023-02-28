@@ -1911,4 +1911,26 @@ input[type=number] {
 .main__credit__cal__block__left__last__btn__third__text {
     font-size: 8px;
 }
+
+.main__credit__cal__block__left__last__btn__second__text {
+  font-size: 16px;
+  margin-right: 18px;
+}
+
+.main__credit__cal__block__right__description {
+  width: 300px;
+}
+
+.main__credit__cal__block__right__bottom__text {
+  width: 321px;
+}
+
+.main__map__main__left__block {
+  padding: 0;
+  width: 295px;
+}
+
+.main__map__main__left__block__adress {
+  width: 300px;
+}
 }
