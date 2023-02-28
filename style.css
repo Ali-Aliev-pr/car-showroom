@@ -6,11 +6,10 @@
 }
 
 body {
-  min-width: 1440px;
+  /* min-width: 1440px; */
 }
 
 h1 {
-  /* font-family: 'Inter'; */
   font-style: normal;
   font-weight: 500;
   font-size: 24px;
@@ -32,6 +31,7 @@ h1 {
 
 .header__block__right {
   display: flex;
+  align-items: center;
 }
 
 .header__block__right__item:not(:last-child) {
@@ -46,6 +46,14 @@ h1 {
   line-height: 24px;
   /* identical to box height */
   color: #404252;
+}
+
+.header__block__right__item__phone:not(:last-child) {
+  margin-right: 28px;
+}
+
+.header__block__right__item__phone {
+  display: none;
 }
 
 .header__under__text {
@@ -210,6 +218,7 @@ h1 {
 
 .main__sellectors__block {
   margin-right: 12px;
+  width: 202px;
 }
 
 .main__sellectors__block p {
@@ -308,8 +317,9 @@ h1 {
   max-width: 1328px;
   margin: 32px auto;
   display: flex;
-  justify-content: center;
-  gap: 41px;
+  justify-content: space-between;
+  gap: 40px;
+  flex-wrap: wrap;
 }
 
 .main__buy__marks__mark {
@@ -463,6 +473,7 @@ h1 {
 .main__buy__selection__cards {
   margin-top: 24px;
   display: flex;
+  gap: 24px;
   /* justify-content: space-between; */
   /* flex-wrap: wrap; */
 }
@@ -472,9 +483,9 @@ h1 {
   position: relative;
 }
 
-.main__buy__selection__cards__card:not(:last-child) {
+/* .main__buy__selection__cards__card:not(:last-child) {
   margin-right: 24px;
-}
+} */
 
 .main__buy__selection__cards__card:hover .main__buy__selection__cards__card__overlay__leftbtn {
   opacity: 1;
@@ -1356,4 +1367,327 @@ input[type=number] {
   line-height: 14px;
   color: #A8ACB0;
   margin-top: 15px;
+}
+
+@media screen and (max-width: 1024px) {
+  .header {
+    padding-left: 15px;
+    padding-right: 15px;
+  }
+
+  .header__block__right__item:not(:last-child) {
+    margin-right: 45px;
+  }
+
+  .header__block__right__item__text {
+    font-size: 16px;
+    line-height: 24px;
+    font-weight: 600;
+    color: #272727;
+  }
+
+  .nav__block {
+    padding: 0 15px;
+  }
+
+  .nav__block__left__text {
+    font-size: 16px;
+  }
+
+  .nav__block__right__text {
+    font-size: 16px;
+  }
+
+  .main__slider__block {
+    background-position: 184px 210px;
+    padding-top: 85px;
+    background-size: 1000px;
+  }
+
+  .main__slider__block .main__slider__block__title {
+    width: 393px;
+    font-style: normal;
+    font-weight: 600;
+    font-size: 35px;
+    line-height: 60px;
+    color: #FFFFFF;
+    margin-left: 114px;
+  }
+
+  .main__slider__block li {
+    font-size: 15px;
+  }
+
+  .main__sellectors {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+  }
+
+  .main__sellectors__block {
+    width: 25%;
+  }
+
+  .main__sellectors__end {
+    background: #C92B18;
+    border-radius: 8px;
+    width: 500px;
+    height: 48px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-right: 48px;
+  }
+
+  .main__buy__title {
+    font-size: 40px;
+  }
+
+  .main__buy__marks {
+    gap: 7px;
+  }
+
+  .main__buy {
+    padding: 0 15px;
+  }
+  
+  .main__buy__selection {
+    padding: 0 15px;
+  }
+
+  .main__buy__selection__cards {
+    display: flex;
+    flex-wrap: wrap;
+  }
+
+  .main__buy__selection__cards__card {
+    margin-top: 20px;
+  }
+
+  .main__credit__cal__block {
+    display: flex;
+    flex-wrap: wrap;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+
+  .main__credit__cal__block__left {
+    margin-right: 0.1px;
+  }
+
+  .main__credit__cal__block__right {
+    width: 652px;
+  }
+
+  .main__map__block {
+    padding: 0 15px;
+  }
+
+  .main__map__main__left__block {
+    width: 400px;
+  }
+
+  .main__map__main__right img {
+    width: 100%;
+  }
+
+  .main__advantage__block {
+    padding: 0 15px;
+  }
+
+}
+
+@media screen and (max-width: 425px) {
+  .header {
+    padding-right: 0;
+  }
+
+  .header__block__right__item {
+    display: none;
+  }
+
+  .header__block__right__item__phone {
+    display: block;
+  }
+
+  .nav {
+    display: none;
+  }
+
+  .main__slider {
+    display: none;
+  }
+
+  .main__sellectors {
+    display: none;
+  }
+
+  .main__buy__title {
+    /* font-size: 30px;   */
+    font-size: calc(1.4rem + 1.8vw);
+  }
+
+  .main__buy__buttons {
+    flex-direction: column;
+  }
+
+  .main__buy__buttons__button {
+    margin-right: none;
+    width: 100%;
+    margin-top: 15px;
+    padding: 15px 0;
+  }
+
+  .main__buy__selection__text {
+    font-size: 22px;
+  }
+
+  .main__buy__selection__text__span {
+    font-size: 22px;
+  }
+
+  .main__buy__selection__filter {
+    flex-wrap: wrap;
+  }
+
+  .main__buy__selection__filter__btn {
+    margin-top: 10px;
+  }
+
+  .main__buy__selection__cards {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    /* /* margin-left: 1%; */
+  }
+
+  .main__buy__selection__cards__card {
+    width: 100%;
+  }
+
+  .main__buy__selection__cards__card img {
+    width: 100%;
+  }
+
+  .main__credit__cal__block__left__title {
+    font-size: 22px;
+  }
+
+  .main__credit__cal__block__left {
+    width: 100%;
+    padding: 0 15px;
+  }
+
+  .main__credit__cal__block__left__vsnos {
+    flex-wrap: wrap;
+  }
+
+  .main__credit__cal__block__left__vsnos__right {
+    margin-left: 0;
+  }
+
+  .main__credit__cal__block__left__vsnos__left {
+    width: 100%;
+  }
+
+  .main__credit__cal__block__left__vsnos__right {
+    width: 100%;
+  }
+
+  .main__credit__cal__block__left__vsnos__left__child {
+    justify-content: space-between;
+  }
+
+  .main__credit__cal__block__left__last__btn__second__text {
+    font-size: 22px;
+  }
+
+  .main__credit__cal__block__left__last__btn__third__text {
+    font-size: 10px;
+  }
+
+  .main__credit__cal__block__left__last__btn {
+    margin-right: -15px;
+    margin-left: -15px;
+  }
+
+  .main__credit__cal__block__right {
+    width: 100%;
+    margin-top: 20px;
+    padding-bottom: 60px;
+    padding-left: 17px;
+    padding-right: 17px;
+  }
+
+  .main__credit__cal__block__right__text {
+    font-size: 22px;
+    line-height: 30px;
+  }
+
+  .main__credit__cal__block__right__contacts {
+    flex-wrap: wrap;
+  }
+
+  .main__credit__cal__block__right__bottom__text {
+    font-size: 12px;
+  }
+
+  .main__credit__cal__block__right__bottom__text {
+    width: 389px;
+    margin-top: 20px;
+  }
+
+  .main__advantage__block__title {
+    font-size: 22px;
+    line-height: 30px;
+    text-align: center;
+  }
+
+  .main__advantage__advanteges {
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+  }
+  
+  .main__advantage__advanteges__block {
+    margin-top: 45px;
+  }
+
+  .footer {
+    padding-left: 15px;
+    padding-right: 15px;
+  }
+
+  .footer__block__nav {
+    flex-direction: column;
+  }
+
+  .footer__block__nav__item {
+    margin-top: 15px;
+  }
+
+  .footer__block__header__left {
+    display: none;
+  }
+
+  .footer__block__header__right__item:not(:last-child) {
+    display: none;
+  }
+
+  .main__map__texts__left {
+    font-size: 22px;
+    line-height: 30px;
+  }
+
+  .main__map__main {
+    flex-wrap: wrap;
+  }
+
+  .main__map__main__right img {
+    width: 100%;
+    margin-top: 25px;
+  }
 }
