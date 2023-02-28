@@ -37,7 +37,7 @@ tabParents[0].addEventListener('click', (event) => {
   let select = event.target
 
   selectedTab = select
-  if (select && select.classList.contains('main__map__main__left__block')) {
+  if (select) {
     tabss.forEach((e, i) => {
       if (select === e) {
         hideTab()

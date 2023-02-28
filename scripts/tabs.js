@@ -1,4 +1,5 @@
-let tabsParent = document.querySelectorAll('.main__buy__selection__filter')
+(function () {
+  let tabsParent = document.querySelectorAll('.main__buy__selection__filter')
 let tabs = document.querySelectorAll('.main__buy__selection__filter__btn')
 let selected__tab = document.querySelector('.main__buy__selection__filter__btn__selected')
 // console.log(selected__tab.dataset.price)
@@ -23,7 +24,7 @@ function hideTab() {
   })
 }
 
-function showTab(i = 3) {
+function showTab(i = 1) {
   tabs[i].classList.add('main__buy__selection__filter__btn__selected')
   // console.log(selected__tab)
 }
@@ -46,3 +47,4 @@ tabsParent[0].addEventListener('click', (event) => {
     })
   }
 })
+})()
