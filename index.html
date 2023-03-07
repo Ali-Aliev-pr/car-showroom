@@ -77,6 +77,7 @@
     </section>
   </nav>
   <main class="main">
+
     <section class="main__slider">
       <div class="swiper mySwiper">
         <div class="swiper-wrapper">
@@ -141,8 +142,9 @@
       </div>
       <div class="swiper-pagination"></div>
     </section>
+
     <section class="main__sellectors">
-      <div class="main__sellectors__block">
+      <div class="main__sellectors__block main__sellectors__block__big">
         <p>Марка</p>
         <select class="nice-select" style="display: none !important;">
           <option data-display="Select">Nothing</option>
@@ -152,7 +154,7 @@
           <option value="4">Potato</option>
         </select>
       </div>
-      <div class="main__sellectors__block" style="width: 202px;">
+      <div class="main__sellectors__block main__sellectors__block__big">
         <p>Модель</p>
         <select class="nice-select nice-select2" style="display: none !important;">
           <option data-display="Select">Nothing</option>
@@ -165,14 +167,14 @@
       <div class="main__sellectors__block">
         <p>Год</p>
         <div class="main__sellectors__block__bottom">
-          <select class="nice-select nice-select-small nice-select3" style="display: none !important;">
+          <select class="nice-select nice-select-small nice-select3 main__sellectors__block__small" style="display: none !important;">
             <option data-display="Select">Год от</option>
             <option value="1">Some option</option>
             <option value="2">Another option</option>
             <option value="3" disabled>A disabled option</option>
             <option value="4">Potato</option>
           </select>
-          <select class="nice-select nice-select-small nice-select4" style="display: none !important;">
+          <select class="nice-select nice-select-small nice-select4 main__sellectors__block__small" style="display: none !important;">
             <option data-display="Select">Год до</option>
             <option value="1">Some option</option>
             <option value="2">Another option</option>
@@ -184,14 +186,14 @@
       <div class="main__sellectors__block">
         <p>Цена</p>
         <div class="main__sellectors__block__bottom">
-          <select class="nice-select nice-select-small nice-select5" style="display: none !important;">
+          <select class="nice-select nice-select-small nice-select5 main__sellectors__block__small" style="display: none !important;">
             <option data-display="Select">Цена от</option>
             <option value="1">Some option</option>
             <option value="2">Another option</option>
             <option value="3" disabled>A disabled option</option>
             <option value="4">Potato</option>
           </select>
-          <select class="nice-select nice-select-small nice-select6" style="display: none !important;">
+          <select class="nice-select nice-select-small nice-select6 main__sellectors__block__small" style="display: none !important;">
             <option data-display="Select">Цена до</option>
             <option value="1">Some option</option>
             <option value="2">Another option</option>
@@ -205,165 +207,225 @@
         <div>
           <svg width="22" height="22" viewBox="0 0 22 22" fill="none" xmlns="http://www.w3.org/2000/svg">
             <path fill-rule="evenodd" clip-rule="evenodd" d="M10.9999 21.3996C8.24165 21.3996 5.59637 20.3039 3.64599 18.3535C1.69561 16.4031 0.599903 13.7579 0.599903 10.9996C0.599903 8.24136 1.69561 5.59608 3.64599 3.6457C5.59637 1.69532 8.24165 0.599609 10.9999 0.599609C13.7582 0.599609 16.4034 1.69532 18.3538 3.6457C20.3042 5.59608 21.3999 8.24136 21.3999 10.9996C21.3999 13.7579 20.3042 16.4031 18.3538 18.3535C16.4034 20.3039 13.7582 21.3996 10.9999 21.3996V21.3996ZM9.6999 4.49961C10.6168 4.49948 11.5175 4.74181 12.3106 5.20203C13.1037 5.66225 13.7609 6.324 14.2158 7.12017C14.6706 7.91634 14.9069 8.81863 14.9005 9.73555C14.8942 10.6525 14.6455 11.5514 14.1797 12.3412L17.119 15.2792C17.3629 15.523 17.5 15.8536 17.5002 16.1985C17.5002 16.3693 17.4667 16.5383 17.4014 16.6961C17.3361 16.8539 17.2404 16.9973 17.1197 17.1181C16.999 17.2388 16.8556 17.3347 16.6979 17.4001C16.5402 17.4655 16.3711 17.4992 16.2004 17.4992C15.8555 17.4993 15.5247 17.3625 15.2808 17.1187L12.3415 14.1794C11.6527 14.5854 10.8796 14.827 10.0822 14.8856C9.2848 14.9442 8.48464 14.8181 7.74391 14.5172C7.00317 14.2163 6.34181 13.7486 5.81122 13.1505C5.28063 12.5523 4.8951 11.8399 4.68461 11.0686C4.47412 10.2973 4.44432 9.48781 4.59754 8.7031C4.75076 7.91838 5.08287 7.17956 5.56806 6.54407C6.05324 5.90858 6.67843 5.39353 7.39504 5.03894C8.11165 4.68436 8.90037 4.4998 9.6999 4.49961V4.49961Z" fill="white"/>
-            </svg>
-            
+          </svg>
         </div>
       </div>     
     </section>
+
     <section class="main__buy">
       <p class="main__buy__title">
         Купить авто с пробегом в Москве
       </p>
       <div class="main__buy__marks">
-        <div class="main__buy__marks__mark main__buy__marks__mark__item1">
-          <img src="./img/mark1.svg" alt="">
-          <p class="main__buy__marks__mark__title">Chery</p>
-          <p class="main__buy__marks__mark__count">24</p>
+        <div class="main__buy__marks__mark__container">
+          <div class="main__buy__marks__mark main__buy__marks__mark__item1">
+            <img src="./img/mark1.svg" alt="">
+            <p class="main__buy__marks__mark__title">Chery</p>
+            <p class="main__buy__marks__mark__count">24</p>
+          </div>
         </div>
-        <div class="main__buy__marks__mark">
-          <img src="./img/mark2.svg" alt="">
-          <p class="main__buy__marks__mark__title">Chevrolet</p>
-          <p class="main__buy__marks__mark__count">24</p>
+        <div class="main__buy__marks__mark__container">
+          <div class="main__buy__marks__mark main__buy__marks__mark__item1">
+            <img src="./img/mark1.svg" alt="">
+            <p class="main__buy__marks__mark__title">Chery</p>
+            <p class="main__buy__marks__mark__count">24</p>
+          </div>
         </div>
-        <div class="main__buy__marks__mark">
-          <img src="./img/mark3.svg" alt="">
-          <p class="main__buy__marks__mark__title">Datsun</p>
-          <p class="main__buy__marks__mark__count">24</p>
+        <div class="main__buy__marks__mark__container">
+          <div class="main__buy__marks__mark main__buy__marks__mark__item1">
+            <img src="./img/mark1.svg" alt="">
+            <p class="main__buy__marks__mark__title">Chery</p>
+            <p class="main__buy__marks__mark__count">24</p>
+          </div>
         </div>
-        <div class="main__buy__marks__mark">
-          <img src="./img/mark8.svg" alt="">
-          <p class="main__buy__marks__mark__title">Mitsubishi</p>
-          <p class="main__buy__marks__mark__count">24</p>
+        <div class="main__buy__marks__mark__container">
+          <div class="main__buy__marks__mark main__buy__marks__mark__item1">
+            <img src="./img/mark1.svg" alt="">
+            <p class="main__buy__marks__mark__title">Chery</p>
+            <p class="main__buy__marks__mark__count">24</p>
+          </div>
         </div>
-        <div class="main__buy__marks__mark">
-          <img src="./img/mark5.svg" alt="">
-          <p class="main__buy__marks__mark__title">Geely</p>
-          <p class="main__buy__marks__mark__count">24</p>
+        <div class="main__buy__marks__mark__container">
+          <div class="main__buy__marks__mark main__buy__marks__mark__item1">
+            <img src="./img/mark1.svg" alt="">
+            <p class="main__buy__marks__mark__title">Chery</p>
+            <p class="main__buy__marks__mark__count">24</p>
+          </div>
         </div>
-        <div class="main__buy__marks__mark">
-          <img src="./img/mark6.svg" alt="">
-          <p class="main__buy__marks__mark__title">Great Wall</p>
-          <p class="main__buy__marks__mark__count">24</p>
+        <div class="main__buy__marks__mark__container">
+          <div class="main__buy__marks__mark main__buy__marks__mark__item1">
+            <img src="./img/mark1.svg" alt="">
+            <p class="main__buy__marks__mark__title">Chery</p>
+            <p class="main__buy__marks__mark__count">24</p>
+          </div>
         </div>
-        <div class="main__buy__marks__mark">
-          <img src="./img/mark7.svg" alt="">
-          <p class="main__buy__marks__mark__title">Hyundai</p>
-          <p class="main__buy__marks__mark__count">24</p>
+        <div class="main__buy__marks__mark__container">
+          <div class="main__buy__marks__mark main__buy__marks__mark__item1">
+            <img src="./img/mark1.svg" alt="">
+            <p class="main__buy__marks__mark__title">Chery</p>
+            <p class="main__buy__marks__mark__count">24</p>
+          </div>
         </div>
-        <div class="main__buy__marks__mark">
-          <img src="./img/mark7.svg" alt="">
-          <p class="main__buy__marks__mark__title">Great Wall</p>
-          <p class="main__buy__marks__mark__count">24</p>
+        <div class="main__buy__marks__mark__container">
+          <div class="main__buy__marks__mark main__buy__marks__mark__item1">
+            <img src="./img/mark1.svg" alt="">
+            <p class="main__buy__marks__mark__title">Chery</p>
+            <p class="main__buy__marks__mark__count">24</p>
+          </div>
         </div>
-        <div class="main__buy__marks__mark">
-          <img src="./img/mark7.svg" alt="">
-          <p class="main__buy__marks__mark__title">Hyundai</p>
-          <p class="main__buy__marks__mark__count">24</p>
+        <div class="main__buy__marks__mark__container">
+          <div class="main__buy__marks__mark main__buy__marks__mark__item1">
+            <img src="./img/mark1.svg" alt="">
+            <p class="main__buy__marks__mark__title">Chery</p>
+            <p class="main__buy__marks__mark__count">24</p>
+          </div>
         </div>
-        <div class="main__buy__marks__mark main__buy__marks__mark__item2">
-          <img src="./img/mark7.svg" alt="">
-          <p class="main__buy__marks__mark__title">Hyundai</p>
-          <p class="main__buy__marks__mark__count">24</p>
+        <div class="main__buy__marks__mark__container">
+          <div class="main__buy__marks__mark main__buy__marks__mark__item1">
+            <img src="./img/mark1.svg" alt="">
+            <p class="main__buy__marks__mark__title">Chery</p>
+            <p class="main__buy__marks__mark__count">24</p>
+          </div>
         </div>
-        <div class="main__buy__marks__mark main__buy__marks__mark__item1">
-          <img src="./img/mark1.svg" alt="">
-          <p class="main__buy__marks__mark__title">Chery</p>
-          <p class="main__buy__marks__mark__count">24</p>
+        <div class="main__buy__marks__mark__container">
+          <div class="main__buy__marks__mark main__buy__marks__mark__item1">
+            <img src="./img/mark1.svg" alt="">
+            <p class="main__buy__marks__mark__title">Chery</p>
+            <p class="main__buy__marks__mark__count">24</p>
+          </div>
         </div>
-        <div class="main__buy__marks__mark">
-          <img src="./img/mark2.svg" alt="">
-          <p class="main__buy__marks__mark__title">Chevrolet</p>
-          <p class="main__buy__marks__mark__count">24</p>
+        <div class="main__buy__marks__mark__container">
+          <div class="main__buy__marks__mark main__buy__marks__mark__item1">
+            <img src="./img/mark1.svg" alt="">
+            <p class="main__buy__marks__mark__title">Chery</p>
+            <p class="main__buy__marks__mark__count">24</p>
+          </div>
         </div>
-        <div class="main__buy__marks__mark">
-          <img src="./img/mark3.svg" alt="">
-          <p class="main__buy__marks__mark__title">Datsun</p>
-          <p class="main__buy__marks__mark__count">24</p>
+        <div class="main__buy__marks__mark__container">
+          <div class="main__buy__marks__mark main__buy__marks__mark__item1">
+            <img src="./img/mark1.svg" alt="">
+            <p class="main__buy__marks__mark__title">Chery</p>
+            <p class="main__buy__marks__mark__count">24</p>
+          </div>
         </div>
-        <div class="main__buy__marks__mark">
-          <img src="./img/mark1.svg" alt="">
-          <p class="main__buy__marks__mark__title">Cherry</p>
-          <p class="main__buy__marks__mark__count">24</p>
+        <div class="main__buy__marks__mark__container">
+          <div class="main__buy__marks__mark main__buy__marks__mark__item1">
+            <img src="./img/mark1.svg" alt="">
+            <p class="main__buy__marks__mark__title">Chery</p>
+            <p class="main__buy__marks__mark__count">24</p>
+          </div>
         </div>
-        <div class="main__buy__marks__mark">
-          <img src="./img/mark5.svg" alt="">
-          <p class="main__buy__marks__mark__title">Geely</p>
-          <p class="main__buy__marks__mark__count">24</p>
+        <div class="main__buy__marks__mark__container">
+          <div class="main__buy__marks__mark main__buy__marks__mark__item1">
+            <img src="./img/mark1.svg" alt="">
+            <p class="main__buy__marks__mark__title">Chery</p>
+            <p class="main__buy__marks__mark__count">24</p>
+          </div>
         </div>
-        <div class="main__buy__marks__mark">
-          <img src="./img/mark6.svg" alt="">
-          <p class="main__buy__marks__mark__title">Great Wall</p>
-          <p class="main__buy__marks__mark__count">24</p>
+        <div class="main__buy__marks__mark__container">
+          <div class="main__buy__marks__mark main__buy__marks__mark__item1">
+            <img src="./img/mark1.svg" alt="">
+            <p class="main__buy__marks__mark__title">Chery</p>
+            <p class="main__buy__marks__mark__count">24</p>
+          </div>
         </div>
-        <div class="main__buy__marks__mark">
-          <img src="./img/mark7.svg" alt="">
-          <p class="main__buy__marks__mark__title">Hyundai</p>
-          <p class="main__buy__marks__mark__count">24</p>
+        <div class="main__buy__marks__mark__container">
+          <div class="main__buy__marks__mark main__buy__marks__mark__item1">
+            <img src="./img/mark1.svg" alt="">
+            <p class="main__buy__marks__mark__title">Chery</p>
+            <p class="main__buy__marks__mark__count">24</p>
+          </div>
         </div>
-        <div class="main__buy__marks__mark">
-          <img src="./img/mark7.svg" alt="">
-          <p class="main__buy__marks__mark__title">Great Wall</p>
-          <p class="main__buy__marks__mark__count">24</p>
+        <div class="main__buy__marks__mark__container">
+          <div class="main__buy__marks__mark main__buy__marks__mark__item1">
+            <img src="./img/mark1.svg" alt="">
+            <p class="main__buy__marks__mark__title">Chery</p>
+            <p class="main__buy__marks__mark__count">24</p>
+          </div>
         </div>
-        <div class="main__buy__marks__mark">
-          <img src="./img/mark7.svg" alt="">
-          <p class="main__buy__marks__mark__title">Hyundai</p>
-          <p class="main__buy__marks__mark__count">24</p>
+        <div class="main__buy__marks__mark__container">
+          <div class="main__buy__marks__mark main__buy__marks__mark__item1">
+            <img src="./img/mark1.svg" alt="">
+            <p class="main__buy__marks__mark__title">Chery</p>
+            <p class="main__buy__marks__mark__count">24</p>
+          </div>
         </div>
-        <div class="main__buy__marks__mark main__buy__marks__mark__item2">
-          <img src="./img/mark7.svg" alt="">
-          <p class="main__buy__marks__mark__title">Hyundai</p>
-          <p class="main__buy__marks__mark__count">24</p>
+        <div class="main__buy__marks__mark__container">
+          <div class="main__buy__marks__mark main__buy__marks__mark__item1">
+            <img src="./img/mark1.svg" alt="">
+            <p class="main__buy__marks__mark__title">Chery</p>
+            <p class="main__buy__marks__mark__count">24</p>
+          </div>
         </div>
-        <div class="main__buy__marks__mark main__buy__marks__mark__item1">
-          <img src="./img/mark1.svg" alt="">
-          <p class="main__buy__marks__mark__title">Chery</p>
-          <p class="main__buy__marks__mark__count">24</p>
+        <div class="main__buy__marks__mark__container">
+          <div class="main__buy__marks__mark main__buy__marks__mark__item1">
+            <img src="./img/mark1.svg" alt="">
+            <p class="main__buy__marks__mark__title">Chery</p>
+            <p class="main__buy__marks__mark__count">24</p>
+          </div>
         </div>
-        <div class="main__buy__marks__mark">
-          <img src="./img/mark2.svg" alt="">
-          <p class="main__buy__marks__mark__title">Chevrolet</p>
-          <p class="main__buy__marks__mark__count">24</p>
+        <div class="main__buy__marks__mark__container">
+          <div class="main__buy__marks__mark main__buy__marks__mark__item1">
+            <img src="./img/mark1.svg" alt="">
+            <p class="main__buy__marks__mark__title">Chery</p>
+            <p class="main__buy__marks__mark__count">24</p>
+          </div>
         </div>
-        <div class="main__buy__marks__mark">
-          <img src="./img/mark3.svg" alt="">
-          <p class="main__buy__marks__mark__title">Datsun</p>
-          <p class="main__buy__marks__mark__count">24</p>
+        <div class="main__buy__marks__mark__container">
+          <div class="main__buy__marks__mark main__buy__marks__mark__item1">
+            <img src="./img/mark1.svg" alt="">
+            <p class="main__buy__marks__mark__title">Chery</p>
+            <p class="main__buy__marks__mark__count">24</p>
+          </div>
         </div>
-        <div class="main__buy__marks__mark">
-          <img src="./img/mark9.svg" alt="">
-          <p class="main__buy__marks__mark__title">Renault</p>
-          <p class="main__buy__marks__mark__count">24</p>
+        <div class="main__buy__marks__mark__container">
+          <div class="main__buy__marks__mark main__buy__marks__mark__item1">
+            <img src="./img/mark1.svg" alt="">
+            <p class="main__buy__marks__mark__title">Chery</p>
+            <p class="main__buy__marks__mark__count">24</p>
+          </div>
         </div>
-        <div class="main__buy__marks__mark">
-          <img src="./img/mark5.svg" alt="">
-          <p class="main__buy__marks__mark__title">Geely</p>
-          <p class="main__buy__marks__mark__count">24</p>
+        <div class="main__buy__marks__mark__container">
+          <div class="main__buy__marks__mark main__buy__marks__mark__item1">
+            <img src="./img/mark1.svg" alt="">
+            <p class="main__buy__marks__mark__title">Chery</p>
+            <p class="main__buy__marks__mark__count">24</p>
+          </div>
         </div>
-        <div class="main__buy__marks__mark">
-          <img src="./img/mark6.svg" alt="">
-          <p class="main__buy__marks__mark__title">Great Wall</p>
-          <p class="main__buy__marks__mark__count">24</p>
+        <div class="main__buy__marks__mark__container">
+          <div class="main__buy__marks__mark main__buy__marks__mark__item1">
+            <img src="./img/mark1.svg" alt="">
+            <p class="main__buy__marks__mark__title">Chery</p>
+            <p class="main__buy__marks__mark__count">24</p>
+          </div>
         </div>
-        <div class="main__buy__marks__mark">
-          <img src="./img/mark7.svg" alt="">
-          <p class="main__buy__marks__mark__title">Hyundai</p>
-          <p class="main__buy__marks__mark__count">24</p>
+        <div class="main__buy__marks__mark__container">
+          <div class="main__buy__marks__mark main__buy__marks__mark__item1">
+            <img src="./img/mark1.svg" alt="">
+            <p class="main__buy__marks__mark__title">Chery</p>
+            <p class="main__buy__marks__mark__count">24</p>
+          </div>
         </div>
-        <div class="main__buy__marks__mark">
-          <img src="./img/mark7.svg" alt="">
-          <p class="main__buy__marks__mark__title">Great Wall</p>
-          <p class="main__buy__marks__mark__count">24</p>
+        <div class="main__buy__marks__mark__container">
+          <div class="main__buy__marks__mark main__buy__marks__mark__item1">
+            <img src="./img/mark1.svg" alt="">
+            <p class="main__buy__marks__mark__title">Chery</p>
+            <p class="main__buy__marks__mark__count">24</p>
+          </div>
         </div>
-        <div class="main__buy__marks__mark">
-          <img src="./img/mark7.svg" alt="">
-          <p class="main__buy__marks__mark__title">Hyundai</p>
-          <p class="main__buy__marks__mark__count">24</p>
+        <div class="main__buy__marks__mark__container">
+          <div class="main__buy__marks__mark main__buy__marks__mark__item1">
+            <img src="./img/mark1.svg" alt="">
+            <p class="main__buy__marks__mark__title">Chery</p>
+            <p class="main__buy__marks__mark__count">24</p>
+          </div>
         </div>
-        <div class="main__buy__marks__mark main__buy__marks__mark__item2">
-          <img src="./img/mark7.svg" alt="">
-          <p class="main__buy__marks__mark__title">Hyundai</p>
-          <p class="main__buy__marks__mark__count">24</p>
+        <div class="main__buy__marks__mark__container">
+          <div class="main__buy__marks__mark main__buy__marks__mark__item1">
+            <img src="./img/mark1.svg" alt="">
+            <p class="main__buy__marks__mark__title">Chery</p>
+            <p class="main__buy__marks__mark__count">24</p>
+          </div>
         </div>
       </div>
       <div class="main__buy__buttons">
@@ -426,7 +488,7 @@
         </div>
       </div>
     </section>
-    
+
     <section class="main__buy__selection">
       <p class="main__buy__selection__text">Подбор по <span class="main__buy__selection__text__span">специальной цене</span></p>
       <div class="main__buy__selection__filter">
@@ -542,6 +604,7 @@
         </div>
       </div>
     </section>
+    
     <section class="main__credit__cal">
       <div class="main__credit__cal__block">
         <div class="main__credit__cal__block__left">
@@ -574,7 +637,6 @@
                 <p>1000 ₽</p>
                 <p>1 000 000 ₽</p>
               </div>
-              <!-- <img src="./img/smallline.svg" alt=""> -->
             </div>
             <div class="main__credit__cal__block__left__vsnos__right">
               <p class="main__credit__cal__block__left__future__textsecond">Срок кредитования</p>
@@ -590,7 +652,6 @@
                 <p>6 мес</p>
                 <p>60 мес</p>
               </div>
-              <!-- <img src="./img/smallline.svg" alt=""> -->
             </div>
           </div>
           <div class="main__credit__cal__block__left__last__btn">
@@ -619,6 +680,7 @@
         </div>
       </div>
     </section>
+
     <section class="main__map">
       <div class="main__map__block">
         <div class="main__map__texts">
@@ -651,7 +713,8 @@
         </div>
       </div>
     </section>
-    <section class="main__advantage">
+    
+    <!-- <section class="main__advantage">
       <div class="main__advantage__block">
         <p class="main__advantage__block__title">Преимущества покупки авто с пробегом у нас</p>
         <div class="main__advantage__advanteges">
@@ -698,9 +761,9 @@
           </div>
         </div>
       </div>
-    </section>
+    </section> -->
   </main>
-  <footer class="footer">
+  <!-- <footer class="footer">
     <section class="footer__block">
       <div class="footer__block__header">
         <div class="footer__block__header__left">
@@ -743,7 +806,7 @@
       <p class="footer__block__text__six">© АВТОХОЛЛZIL, 2022 г.</p>
       <p class="footer__block__text__six">Политика конфиденциальности</p>
     </section>
-  </footer>
+  </footer> -->
   <script src="./scripts/script.js"></script>
   <script src="./scripts/swiper.js"></script>
   <script src="./scripts/mask.js"></script>
