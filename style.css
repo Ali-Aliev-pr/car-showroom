@@ -317,10 +317,27 @@ h1 {
   max-width: 1328px;
   margin: 32px auto;
   display: flex;
-  justify-content: space-between;
+  justify-content: flex-start;
   gap: 40px;
   flex-wrap: wrap;
+  /* display: grid;  */
+  /* grid-template: auto / 1fr 1fr 1fr; */
+  /* grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr; */
+  /* grid-template-rows: 1fr 1fr;  */
+  /* gap: 8px 41px;  */
+  /* grid-template-areas: 
+    "a . . . . . . . . b"
+    "a . . . . . . . . b"
+    "a . . . . . . . . b"; */
 }
+
+/* .main__buy__marks__mark__item1 {
+  grid-area: a;
+}
+
+.main__buy__marks__mark__item2 {
+  grid-area: b;
+} */
 
 .main__buy__marks__mark {
   text-align: center;
@@ -1442,17 +1459,19 @@ input[type=number] {
 
   .main__sellectors__block {
     width: 25%;
+    margin-right: 0;
   }
 
   .main__sellectors__end {
     background: #C92B18;
     border-radius: 8px;
-    width: 500px;
+    width: 245px;
     height: 48px;
     display: flex;
     justify-content: center;
     align-items: center;
-    margin-right: 48px;
+    /* margin-right: 48px; */
+    margin-top: 20px;
   }
 
   .main__buy__title {
@@ -1460,7 +1479,7 @@ input[type=number] {
   }
 
   .main__buy__marks {
-    gap: 7px;
+    gap: 16px;
   }
 
   .main__buy {
@@ -1482,18 +1501,43 @@ input[type=number] {
 
   .main__credit__cal__block {
     display: flex;
-    flex-wrap: wrap;
     display: flex;
-    flex-wrap: wrap;
     justify-content: center;
   }
 
   .main__credit__cal__block__left {
-    margin-right: 0.1px;
+    /* margin-right: 0.1px; */
+    padding: 32px 24px 20px 24px;
+    margin-right: 0;
+    width: 50%;
+  }
+
+  .main__credit__cal__block__left__vsnos__right {
+    margin-left: 0;
   }
 
   .main__credit__cal__block__right {
-    width: 652px;
+    width: 50%;
+  }
+
+  .main__credit__cal__block__left__vsnos__left {
+    width: 100%;
+  }
+
+  .main__credit__cal__block__left__vsnos__right {
+    width: 100%;
+  }
+
+  .main__credit__cal__block__left__vsnos__left__child {
+    justify-content: space-between;
+  }
+
+  .main__credit__cal__block__right__bottom__text {
+    width: 464px;
+  }
+
+  .main__credit__cal__block__left__vsnos {
+    flex-wrap: wrap;
   }
 
   .main__map__block {
@@ -1510,6 +1554,26 @@ input[type=number] {
 
   .main__advantage__block {
     padding: 0 15px;
+  }
+
+  .main__advantage__advanteges {
+    margin-left: -22px;
+  }
+
+  .main__advantage__advanteges__block__title {
+    font-size: 18px;
+  }
+
+  .main__advantage__advanteges__block__description {
+    font-size: 12px;
+  }
+
+  .footer__block {
+    padding: 30px 15px;
+  }
+
+  .main__sellectors__end p {
+    color: white;
   }
 
 }
@@ -1765,6 +1829,10 @@ input[type=number] {
     margin-top: 10px;
   }
 
+  .main__buy__marks {
+    gap: 28px;
+  }
+
   .main__buy__selection__cards {
     display: flex;
     flex-wrap: wrap;
@@ -1902,7 +1970,7 @@ input[type=number] {
   }
 }
 
-@media screen and (max-width: 500px){
+/* @media screen and (max-width: 500px){
   .main__credit__cal__block__right__bottom__text {
       width: 357px;
       margin-top: 20px;
@@ -1911,7 +1979,7 @@ input[type=number] {
   .main__map__main__left__block {
     width: 395px;
   }
-}
+} */
 
 @media screen and (max-width: 375px) {
 .main__credit__cal__block__left__last__btn__third__text {
@@ -1940,6 +2008,7 @@ input[type=number] {
   width: 300px;
 }
 }
+
 @media screen and (max-width: 390px) {
 .main__credit__cal__block__left__last__btn__third__text {
     font-size: 8px;

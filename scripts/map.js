@@ -51,14 +51,6 @@ function init() {
 
   let selected = data_c
 
-  // if (selectedTab.dataset.geo === 'a') {
-  //   selected = data_a
-  // } else if (selectedTab.dataset.geo === 'b') {
-  //   selected = data_b
-  // } else if (selectedTab.dataset.geo === 'c') {
-  //   selected = data_c
-  // }
-
   window.map = new ymaps.Map('map-center', {
     center: selected,
     zoom: 16 
