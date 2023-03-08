@@ -1550,6 +1550,22 @@ input[type=number] {
     padding: 0 15px;
   }
 
+  .main__advantage {
+    padding: 0 15px;
+  }
+
+  .main__advantage__advanteges__block__description {
+    width: 95%;
+  }
+
+  .footer {
+    padding: 0 15px;
+  }
+
+  .footer__block__header__right__item:not(:last-child) {
+    margin-right: 53px;
+  }
+
 }
 
 @media screen and (max-width: 900px) {
@@ -1616,6 +1632,22 @@ input[type=number] {
     width: 80%;
   }
 
+  .main__advantage__advanteges__block__title {
+    width: 249px;
+  }
+
+  .footer__block__header__right {
+    display: none;
+  }
+
+  .footer__block__nav {
+    flex-direction: column;
+  }
+
+  .footer__block__nav__item {
+    margin-bottom: 10px;
+  }
+
 }
 
 @media screen and (max-width: 500px) {
@@ -1679,6 +1711,14 @@ input[type=number] {
     width: 100%;
   }
 
+  .main__advantage__advanteges {
+    flex-wrap: wrap;
+  }
+  
+  .main__advantage__advanteges__block {
+    margin-bottom: 20px;
+  }
+
 }
 
 @media screen and (max-width: 375px) {
@@ -1735,6 +1775,10 @@ input[type=number] {
 
   .main__credit__cal__block__right__text {
     font-size: 29px;
+  }
+
+  .main__map__main__left__block__adress {
+    width: 288px;
   }
 
 }
