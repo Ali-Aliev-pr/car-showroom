@@ -1573,6 +1573,40 @@ input[type=number] {
 
 }
 
+@media screen and (max-width: 1241px) {
+  .main__credit__cal__block__right {
+    width: 500px;
+  }  
+
+  .main__credit__cal__block__right__bottom__text {
+    width: 100%;
+  }
+}
+
+@media screen and (max-width: 1097px) {
+  .main__credit__cal__block__left {
+    margin-right: 10px;
+  }
+}
+
+@media screen and (max-width: 1324px) {
+  .header {
+    padding: 0 15px;
+  }
+
+  .nav {
+    padding: 0 15px;
+  }
+
+  .main {
+    padding: 0 15px;
+  }
+
+  .main__buy__selection__cards {
+    flex-wrap: wrap;
+  }  
+}
+
 @media screen and (max-width: 900px) {
   .header__block__right__item {
     display: none;
@@ -1691,6 +1725,14 @@ input[type=number] {
     width: 100%;
   }
 
+}
+
+@media screen and (max-width: 705px) {
+  .main__buy__selection__cards {
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+  }  
 }
 
 @media screen and (max-width: 500px) {
