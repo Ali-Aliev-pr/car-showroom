@@ -1432,6 +1432,10 @@ input[type=number] {
   .main__buy__selection__cards {
     flex-wrap: wrap;
   }  
+
+  .footer {
+    padding: 0 15px;
+  }
 }
 
 @media screen and (max-width: 1300px) {
@@ -1459,6 +1463,10 @@ input[type=number] {
 @media screen and (max-width: 1097px) {
   .main__credit__cal__block__left {
     margin-right: 10px;
+  }
+
+  .main__advantage__advanteges__block__description {
+    width: 95%;
   }
 }
 
@@ -1530,21 +1538,26 @@ input[type=number] {
     margin-bottom: 10px !important;
   }
 
-  .main__buy {
+  /* .main__buy {
     padding-left: 15px;
     padding-right: 15px;
-  }
-
-  .main__buy__marks {
-    /* gap: 12px 32px; */
-  }
+  } */
 
   .main__buy__selection {
     padding: 0 15px;
   }
 
   .main__buy__selection__cards {
-    flex-wrap: wrap;
+    flex-wrap: wrap !important;
+    justify-content: space-between !important;
+  }
+
+  .main__buy__selection__cards__card  {
+    width: 280px;
+  }
+
+  .main__buy__selection__cards__card__img{
+    width: 280px;
   }
 
   .main__credit__cal__block {
@@ -1616,6 +1629,17 @@ input[type=number] {
   }
 
 
+}
+
+@media screen and (max-width: 945px) {
+  .main__credit__cal__block__left__last__btn {
+    flex-wrap: wrap;
+    justify-content: flex-start;
+  }
+
+  .main__credit__cal__block__left__last__btn__third__text {
+    padding-left: 14px;
+  }
 }
 
 @media screen and (max-width: 900px) {
@@ -1746,11 +1770,12 @@ input[type=number] {
 
 }
 
-@media screen and (max-width: 705px) {
+@media screen and (max-width: 712px) {
   .main__buy__selection__cards {
-    flex-direction: column;
+    /* flex-direction: column;
     align-items: center;
-    justify-content: center;
+    justify-content: center; */
+    flex-wrap: wrap;
   }  
 }
 
@@ -1766,6 +1791,14 @@ input[type=number] {
   .main__slider__block {
     background-position: 33px 306px !important
   }
+
+  .main__buy__selection__cards__card {
+    width: 260px;
+  }
+
+  .main__buy__selection__cards__card__img {
+    width: 260px;
+  }
 }
 
 @media screen and (max-width: 630px) {
@@ -1775,12 +1808,57 @@ input[type=number] {
 
   .main__credit__cal__block__left {
     width: 100%;
+    padding-right: 0;
   }
 
   .main__credit__cal__block__right {
     width: 100%;
   }
 
+  .main__buy__selection__cards__card {
+    width: 240px;
+  }
+
+  .main__buy__selection__cards__card__img {
+    width: 240px;
+  }
+
+  .main__credit__cal__block__left__last__btn {
+    flex-wrap:nowrap;
+  }
+
+}
+
+@media screen and (max-width: 564px) {
+  .main__buy__selection__cards__card {
+    width: 220px;
+  }
+
+  .main__buy__selection__cards__card__img {
+    width: 220px;
+  }  
+
+  .main__buy__selection__cards__card__price {
+    white-space: nowrap;
+  }
+
+  .main__buy__selection__cards__card__sale {
+    white-space: nowrap;
+  }
+}
+
+@media screen and (max-width: 523px) {
+  .main__buy__selection__cards__card {
+    width: 100%;
+  }  
+
+  .main__buy__selection__cards__card__img {
+    width: 100%;
+  }
+
+  .main__credit__cal__block__left__last__btn {
+    flex-wrap: wrap;
+  }
 }
 
 @media screen and (max-width: 500px) {
@@ -1978,6 +2056,10 @@ input[type=number] {
   .main__slider__block {
     background-position: -65px 356px !important;
     background-size: 150%;
+  }
+
+  .main__credit__cal__block__right__text {
+    font-size: 26px;
   }
 
   /* .main__map__main__left__block__adress {
