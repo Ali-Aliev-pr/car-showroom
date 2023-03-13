@@ -1768,6 +1768,10 @@ input[type=number] {
     width: 100%;
   }
 
+  .main__buy__title {
+    font-size: 38px;
+  }
+
 }
 
 @media screen and (max-width: 712px) {
