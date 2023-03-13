@@ -1781,6 +1781,10 @@ input[type=number] {
     justify-content: center; */
     flex-wrap: wrap;
   }  
+
+  .main__credit__cal__block__right__text {
+    font-size: 29px;
+  }
 }
 
 @media screen and (max-width: 643px) {
@@ -1899,6 +1903,11 @@ input[type=number] {
     line-height: 50px !important;
   }
 
+  .main__map__texts__left {
+    font-size: 25px;
+    line-height: 35px;
+  }
+
 }
 
 @media screen and (max-width: 425px) {
@@ -1954,6 +1963,21 @@ input[type=number] {
     margin-bottom: 20px;
   }
 
+  .main__map__texts {
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+  }
+
+  .main__advantage__block__title {
+    font-size: 25px;
+  }
+
+  .main__buy__title {
+    font-size: 30px;
+  }
+
 }
 
 @media screen and (max-width: 375px) {
@@ -2002,7 +2026,17 @@ input[type=number] {
 }
 
 .main__map__main__left__block__adress {
-  font-size: 12px;
+  font-size: 16px;
+}
+
+.main__slider__block__title {
+  margin-left: 55px !important;
+}
+
+.main__slider__block li {
+  font-size: 16px;
+  margin-left: 55px;
+  margin-top: 8px;
 }
 
 }
