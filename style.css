@@ -1091,9 +1091,13 @@ input[type=number] {
 
 .main__map__main__adres {
   /* width: 450px; */
-  width: 125%;
+  /* width: 125%; */
   background-color: #FFFFFF;
   padding: 16px 0 0 20px;
+}
+
+.main__map__main__adres__selected {
+  background: #F5F7FA;
 }
 
 .main__map__main__adres:hover {
