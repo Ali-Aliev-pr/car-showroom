@@ -41,7 +41,10 @@
             <path d="M7.04897 0.927078C7.34897 0.00607812 8.65197 0.00607812 8.95097 0.927078L10.021 4.21908C10.0863 4.41957 10.2134 4.59426 10.384 4.71818C10.5547 4.84211 10.7601 4.90892 10.971 4.90908H14.433C15.402 4.90908 15.804 6.14908 15.021 6.71908L12.221 8.75308C12.05 8.87711 11.9227 9.05209 11.8573 9.25293C11.7919 9.45377 11.7918 9.67017 11.857 9.87108L12.927 13.1631C13.227 14.0841 12.172 14.8511 11.387 14.2811L8.58697 12.2471C8.41618 12.1231 8.21053 12.0563 7.99947 12.0563C7.78842 12.0563 7.58277 12.1231 7.41197 12.2471L4.61197 14.2811C3.82797 14.8511 2.77397 14.0841 3.07297 13.1631L4.14297 9.87108C4.20815 9.67017 4.20803 9.45377 4.14264 9.25293C4.07725 9.05209 3.94994 8.87711 3.77897 8.75308L0.979974 6.72008C0.196974 6.15008 0.599974 4.91008 1.56797 4.91008H5.02897C5.24002 4.91013 5.44568 4.84342 5.6165 4.71948C5.78732 4.59554 5.91455 4.42073 5.97997 4.22008L7.04997 0.928078L7.04897 0.927078Z" fill="#404252"/>
             </svg>            
         </div>
-        <div class="header__block__right__item__phone">
+        <!-- <input type="checkbox" id="burger"> -->
+        <!-- <label for="burger"> -->
+          <div class="header__block__right__item__phone burger__button" style="cursor: pointer;">    
+        <!-- </label> -->
           <svg width="18" height="14" viewBox="0 0 18 14" fill="none" xmlns="http://www.w3.org/2000/svg">
             <path d="M1 13H17M1 1H17H1ZM1 7H17H1Z" stroke="#404252" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
             </svg>            
@@ -76,6 +79,29 @@
       </div>
     </section>
   </nav>
+  <section class="burger__menu burger__menu__close">
+    <div class="burger__menu__block">
+      <ul>
+        <hr>
+        <li>
+          <p>Автомобили в наличии</p>
+        </li>
+        <hr>
+        <li>
+          <p>Обмен авто</p>
+        </li>
+        <hr>
+        <li>
+          <p>Автокредитование</p>
+        </li>
+        <hr>
+        <li>
+          <p>Контакты</p>
+        </li>
+        <hr>
+      </ul>
+    </div>
+  </section>
   <main class="main">
     <section class="main__slider">
       <div class="swiper mySwiper">
@@ -146,39 +172,34 @@
       <div class="main__sellectors__block ">
         <p>Марка</p>
         <select class="nice-select" style="display: none !important;">
-          <option data-display="Select">Nothing</option>
-          <option value="1">Some option</option>
-          <option value="2">Another option</option>
-          <option value="3" disabled>A disabled option</option>
-          <option value="4">Potato</option>
+          <option data-display="Select">BMW</option>
+          <option value="1">Opel</option>
+          <option value="2">Mazda</option>
+          <option value="3" disabled>Lada</option>
+          <option value="4">Mercedes</option>
         </select>
       </div>
       <div class="main__sellectors__block ">
         <p>Модель</p>
         <select class="nice-select nice-select2" style="display: none !important;">
-          <option data-display="Select">Nothing</option>
-          <option value="1">Some option</option>
-          <option value="2">Another option</option>
-          <option value="3" disabled>A disabled option</option>
-          <option value="4">Potato</option>
+          <option data-display="Select">Автомат</option>
+          <option value="1">Механик</option>
+          <option value="2">Робот</option>
+          <option value="3" disabled>Электро</option>
         </select>
       </div>
       <div class="main__sellectors__block">
         <p>Год</p>
         <div class="main__sellectors__block__bottom">
           <select class="nice-select nice-select-small nice-select3 main__sellectors__block__small" style="display: none !important;">
-            <option data-display="Select">Год от</option>
-            <option value="1">Some option</option>
-            <option value="2">Another option</option>
-            <option value="3" disabled>A disabled option</option>
-            <option value="4">Potato</option>
+            <option data-display="Select">2015</option>
+            <option value="1">2017</option>
+            <option value="2">2020</option>
           </select>
           <select class="nice-select nice-select-small nice-select4 main__sellectors__block__small" style="display: none !important;">
-            <option data-display="Select">Год до</option>
-            <option value="1">Some option</option>
-            <option value="2">Another option</option>
-            <option value="3" disabled>A disabled option</option>
-            <option value="4">Potato</option>
+            <option data-display="Select">2023</option>
+            <option value="1">2020</option>
+            <option value="2">2018</option>
           </select>
         </div>
       </div>
@@ -186,18 +207,14 @@
         <p>Цена</p>
         <div class="main__sellectors__block__bottom">
           <select class="nice-select nice-select-small nice-select5 main__sellectors__block__small" style="display: none !important;">
-            <option data-display="Select">Цена от</option>
-            <option value="1">Some option</option>
-            <option value="2">Another option</option>
-            <option value="3" disabled>A disabled option</option>
-            <option value="4">Potato</option>
+            <option data-display="Select">200 000</option>
+            <option value="1">300 000</option>
+            <option value="2">600 000</option>
           </select>
           <select class="nice-select nice-select-small nice-select6 main__sellectors__block__small" style="display: none !important;">
-            <option data-display="Select">Цена до</option>
-            <option value="1">Some option</option>
-            <option value="2">Another option</option>
-            <option value="3" disabled>A disabled option</option>
-            <option value="4">Potato</option>
+            <option data-display="Select">500 000</option>
+            <option value="1">800 000</option>
+            <option value="2">1 000 000</option>
           </select>
         </div>
       </div>
@@ -675,24 +692,24 @@
           <p class="main__map__texts__right">Перейти в контакты</p>
         </div>
         <div class="main__map__main">
-          <div class="main__map__main__left">
-            <div class="main__map__main__left__block" data-geo="a">
-              <p class="main__map__main__left__block__title">ГосАвтоТрейд Москва</p>
-              <p class="main__map__main__left__block__adress">Нижний Новгород, Новгородское шоссе, д. 124, к3 <span class="main__map__main__left__block__adress__span">Построить маршрут</span></p>
+          <div class="main__map__main__adreses">
+            <div class="main__map__main__adres" data-geo="a">
+              <p class="main__map__main__adres__title">ГосАвтоТрейд Москва</p>
+              <p class="main__map__main__adres__description">Нижний Новгород, Новгородское шоссе, д. 124, к3 <span class="main__map__main__adres__span">Построить маршрут</span></p>
               <p class="main__map__main__left__block__time">Ежедневно: с 9:00 до 21:00</p>
-              <p class="main__map__main__left__block__number">+7 499 489 – 89 – 89</p>
+              <p class="main__map__main__adres__number">+7 499 489 – 89 – 89</p>
             </div>
-            <div class="main__map__main__left__block" data-geo="b">
-              <p class="main__map__main__left__block__title">ГосАвтоТрейд Москва</p>
-              <p class="main__map__main__left__block__adress">Нижний Новгород, Новгородское шоссе, д. 124, к3 <span class="main__map__main__left__block__adress__span">Построить маршрут</span></p>
+            <div class="main__map__main__adres" data-geo="b">
+              <p class="main__map__main__adres__title">ГосАвтоТрейд Москва</p>
+              <p class="main__map__main__adres__description">Нижний Новгород, Новгородское шоссе, д. 124, к3 <span class="main__map__main__adres__span">Построить маршрут</span></p>
               <p class="main__map__main__left__block__time">Ежедневно: с 9:00 до 21:00</p>
-              <p class="main__map__main__left__block__number">+7 499 489 – 89 – 89</p>
+              <p class="main__map__main__adres__number">+7 499 489 – 89 – 89</p>
             </div>
-            <div class="main__map__main__left__block main__map__main__left__block__selected" data-geo="c">
-              <p class="main__map__main__left__block__title">ГосАвтоТрейд Москва</p>
-              <p class="main__map__main__left__block__adress">Нижний Новгород, Новгородское шоссе, д. 124, к3 <span class="main__map__main__left__block__adress__span">Построить маршрут</span></p>
+            <div class="main__map__main__adres main__map__main__adres__selected" data-geo="c">
+              <p class="main__map__main__adres__title">ГосАвтоТрейд Москва</p>
+              <p class="main__map__main__adres__description">Нижний Новгород, Новгородское шоссе, д. 124, к3 <span class="main__map__main__adres__span">Построить маршрут</span></p>
               <p class="main__map__main__left__block__time">Ежедневно: с 9:00 до 21:00</p>
-              <p class="main__map__main__left__block__number">+7 499 489 – 89 – 89</p>
+              <p class="main__map__main__adres__number">+7 499 489 – 89 – 89</p>
             </div>
           </div>
           <div class="main__map__main__right" id="map-center">
@@ -794,6 +811,7 @@
       <p class="footer__block__text__six">Политика конфиденциальности</p>
     </section>
   </footer>
+  <script src="./scripts/menu.js"></script>
   <script src="./scripts/script.js"></script>
   <script src="./scripts/swiper.js"></script>
   <script src="./scripts/mask.js"></script>

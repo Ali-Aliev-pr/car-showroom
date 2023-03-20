@@ -1089,20 +1089,20 @@ input[type=number] {
   justify-content: space-between;
 }
 
-.main__map__main__left__block {
+.main__map__main__adres {
   /* width: 450px; */
   width: 125%;
   background-color: #FFFFFF;
   padding: 16px 0 0 20px;
 }
 
-.main__map__main__left__block:hover {
+.main__map__main__adres:hover {
   background: #F5F7FA;
   cursor: pointer;
   transition: 0.5s;
 }
 
-.main__map__main__left__block__title {
+.main__map__main__adres__title {
   font-style: normal;
   font-weight: 600;
   font-size: 16px;
@@ -1110,7 +1110,7 @@ input[type=number] {
   color: #404252;
 }
 
-.main__map__main__left__block__adress {
+.main__map__main__adres__description {
   width: 342px;
   font-style: normal;
   font-weight: 400;
@@ -1121,7 +1121,7 @@ input[type=number] {
   margin-top: 12px;
 }
 
-.main__map__main__left__block__time {
+.main__map__main__adres__time {
   /* width: 342px; */
   font-style: normal;
   font-weight: 400;
@@ -1132,7 +1132,7 @@ input[type=number] {
   margin-top: 10px;
 }
 
-.main__map__main__left__block__number {
+.main__map__main__adres__number {
   /* width: 342px; */
   font-style: normal;
   font-weight: 400;
@@ -1143,7 +1143,7 @@ input[type=number] {
   margin-top: 10px;
 }
 
-.main__map__main__left__block__adress__span {
+.main__map__main__adres__span {
   font-style: normal;
   font-weight: 400;
   font-size: 16px;
@@ -1361,6 +1361,47 @@ input[type=number] {
   background-color: #F5F7FA;
 }
 
+.burger__menu__close {
+  display: none;
+}
+
+.burger__menu__open {
+  display: block;
+}
+
+.burger__menu__block {
+  max-width: 1328px;
+  margin: 0 auto;
+  display: flex;
+  flex-direction: column;
+}
+
+.burger__menu__block ul {
+  list-style: none;
+}
+
+.burger__menu__block li {
+  display: block;
+  padding: 20px 15px;
+  font-size: 16px;
+  line-height: 1;
+  color: var(--base-font-color);
+  transition: .25s ease-out;
+  cursor: pointer;
+}
+
+/* #burger {
+  display: none;
+}
+
+#burger:checked ~ .burger__menu {
+  display: block;
+}
+
+#burger:not(:checked) ~ .burger__menu {
+  display: none;
+} */
+
 @media screen and (max-width: 1324px) {
   .header {
     padding: 0 15px;
@@ -1572,6 +1613,14 @@ input[type=number] {
   .main__credit__cal__block__left__last__btn__third__text {
     padding-left: 14px;
   }
+
+  .nav__block__element {
+    font-size: 14px;
+  }
+
+  .nav__block__favorite {
+    font: 14px;
+  }
 }
 
 @media screen and (max-width: 900px) {
@@ -1590,6 +1639,10 @@ input[type=number] {
   .main__slider__block {
     background-position: 100px 240px !important;
   }
+
+  /* .burger__menu {
+    display: block;
+  } */
 }
 
 @media screen and (max-width: 840px) {
@@ -1696,7 +1749,7 @@ input[type=number] {
     width: 100%;
   }
 
-  .main__map__main__left__block__adress {
+  .main__map__main__adres__description {
     width: 100%;
   }
 
@@ -1957,7 +2010,7 @@ input[type=number] {
   font-size: 25px;
 }
 
-.main__map__main__left__block__adress {
+.main__map__main__adres__description {
   font-size: 16px;
 }
 

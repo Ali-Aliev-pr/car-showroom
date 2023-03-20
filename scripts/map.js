@@ -1,6 +1,6 @@
-let tabParents = document.querySelectorAll('.main__map__main__left');
-let tabss = document.querySelectorAll('.main__map__main__left__block');
-let selectedTab = document.querySelector('.main__map__main__left__block__selected');
+let tabParents = document.querySelectorAll('.main__map__main__adreses');
+let tabss = document.querySelectorAll('.main__map__main__adres');
+let selectedTab = document.querySelector('.main__map__main__adres__selected');
 
 let data_a = [41.462599, 45.091376];
 let data_b = [41.693083, 44.801561];
@@ -10,7 +10,7 @@ console.log(selectedTab)
 
 function hideTab() {
   tabss.forEach(e => {
-    e.classList.remove('main__map__main__left__block__selected')
+    e.classList.remove('main__map__main__adres__selected')
   })
 }
 
@@ -23,7 +23,7 @@ function showTab(i = 2) {
   } else if (selectedTab.dataset.geo === 'c') {
     selected = data_c
   }
-  tabss[i].classList.add('main__map__main__left__block__selected')
+  tabss[i].classList.add('main__map__main__adres__selected')
   if (window.map) {
     window.map.setCenter(selected)
   } 
