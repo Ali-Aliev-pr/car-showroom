@@ -26,11 +26,11 @@
 <body>
   <header class="header">
     <section class="header__block">
-      <div class="header__block__left">
-        <h1>ГосАвто Трейд</h1>
-        <p class="header__under__text">Автомобили с пробегом</p>
+      <div>
+        <h1 class="header__block__title">ГосАвто Трейд</h1>
+        <p class="header__block__subtext">Автомобили с пробегом</p>
       </div>
-      <div class="header__block__right">
+      <div class="header__block__contacts">
         <div class="header__block__right__item__phone">
           <svg width="16" height="16" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg">
             <path d="M0 1C0 0.734784 0.105357 0.48043 0.292893 0.292893C0.48043 0.105357 0.734784 0 1 0H3.153C3.38971 0.000108969 3.6187 0.0841807 3.79924 0.23726C3.97979 0.390339 4.10018 0.602499 4.139 0.836L4.879 5.271C4.91436 5.48222 4.88097 5.69921 4.78376 5.89003C4.68655 6.08085 4.53065 6.23543 4.339 6.331L2.791 7.104C3.34611 8.47965 4.17283 9.72928 5.22178 10.7782C6.27072 11.8272 7.52035 12.6539 8.896 13.209L9.67 11.661C9.76552 11.4695 9.91994 11.3138 10.1106 11.2166C10.3012 11.1194 10.5179 11.0859 10.729 11.121L15.164 11.861C15.3975 11.8998 15.6097 12.0202 15.7627 12.2008C15.9158 12.3813 15.9999 12.6103 16 12.847V15C16 15.2652 15.8946 15.5196 15.7071 15.7071C15.5196 15.8946 15.2652 16 15 16H13C5.82 16 0 10.18 0 3V1Z" fill="#C92B18"/>
@@ -46,38 +46,37 @@
             <path d="M1 13H17M1 1H17H1ZM1 7H17H1Z" stroke="#404252" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
             </svg>            
         </div>
-        <div class="header__block__right__item">
-          <p class="header__block__right__item__text">8 800 496-45-23</p>
-          <p class="header__under__text">Звонок бесплатный по России</p>
+        <div class="header__block__contact">
+          <p class="header__block__contact__title">8 800 496-45-23</p>
+          <p class="header__block__subtext">Звонок бесплатный по России</p>
         </div>
-        <div class="header__block__right__item">
-          <p class="header__block__right__item__text">8 800 496-45-23</p>
-          <p class="header__under__text">МКАД, 44 км (внешняя сторона)</p>
+        <div class="header__block__contact">
+          <p class="header__block__contact__title">8 800 496-45-23</p>
+          <p class="header__block__subtext">МКАД, 44 км (внешняя сторона)</p>
         </div>
-        <div class="header__block__right__item">
-          <p class="header__block__right__item__text">8 800 496-45-23</p>
-          <p class="header__under__text">МКАД, 44 км (внешняя сторона)</p>
+        <div class="header__block__contact">
+          <p class="header__block__contact__title">8 800 496-45-23</p>
+          <p class="header__block__subtext">МКАД, 44 км (внешняя сторона)</p>
         </div>
       </div>
     </section>
   </header>
   <nav class="nav">
     <section class="nav__block">
-      <div class="nav__block__left">
-        <p class="nav__block__left__text">Автомобили в наличии</p>
-        <p class="nav__block__left__text">Выкуп автомобилей</p>
-        <p class="nav__block__left__text">Выгоды и акции</p>
-        <p class="nav__block__left__text">Автокредитование</p>
-        <p class="nav__block__left__text">Контакты</p>
+      <div class="nav__block__elements">
+        <p class="nav__block__element">Автомобили в наличии</p>
+        <p class="nav__block__element">Выкуп автомобилей</p>
+        <p class="nav__block__element">Выгоды и акции</p>
+        <p class="nav__block__element">Автокредитование</p>
+        <p class="nav__block__element">Контакты</p>
       </div>
-      <div class="nav__block__right">
+      <div class="nav__block__favorites">
         <img src="./img/start2.svg" alt="">
-        <p class="nav__block__right__text">Избранное</p>
+        <p class="nav__block__favorite">Избранное</p>
       </div>
     </section>
   </nav>
   <main class="main">
-
     <section class="main__slider">
       <div class="swiper mySwiper">
         <div class="swiper-wrapper">
@@ -144,7 +143,7 @@
     </section>
 
     <section class="main__sellectors">
-      <div class="main__sellectors__block main__sellectors__block__big">
+      <div class="main__sellectors__block ">
         <p>Марка</p>
         <select class="nice-select" style="display: none !important;">
           <option data-display="Select">Nothing</option>
@@ -154,7 +153,7 @@
           <option value="4">Potato</option>
         </select>
       </div>
-      <div class="main__sellectors__block main__sellectors__block__big">
+      <div class="main__sellectors__block ">
         <p>Модель</p>
         <select class="nice-select nice-select2" style="display: none !important;">
           <option data-display="Select">Nothing</option>
@@ -202,7 +201,7 @@
           </select>
         </div>
       </div>
-      <div class="main__sellectors__end">
+      <div class="main__selectors__search">
         <p>1029 авто</p>
         <div>
           <svg width="22" height="22" viewBox="0 0 22 22" fill="none" xmlns="http://www.w3.org/2000/svg">
@@ -606,41 +605,33 @@
     </section>
     
     <section class="main__credit__cal">
-      <div class="main__credit__cal__block">
-        <div class="main__credit__cal__block__left">
-          <p class="main__credit__cal__block__left__title">Расчет автокредита</p>
-          <p class="main__credit__cal__block__left__description">Расчитайте предварительный ежемесячный платеж, который вам подходит</p>
-          <p class="main__credit__cal__block__left__future__text">Стоимость вашего будущего авто</p>
-          <div class="main__credit__cal__block__left__futurecar">
+      <div class="main__cal__block">
+        <div class="main__cal__credit">
+          <p class="main__cal__credit__title">Расчет автокредита</p>
+          <p class="main__cal__credit__description">Расчитайте предварительный ежемесячный платеж, который вам подходит</p>
+          <p class="main__cal__credit__overtext">Стоимость вашего будущего авто</p>
+          <div class="main__cal__credit__amount">
             <p class="main__credit__cal__block__left__futurecar__text"></p>
             <label class="main__credit__cal__block__left__futurecar__input__father">
               <input id="input-1" class="main__credit__cal__block__left__futurecar__input" value="1" min="1" max="999999" type="number">
               <span>₽</span>
             </label>
           </div>
-          <div class="main__credit__cal__slider" id="range-slider"></div>
-          <div class="main__credit__cal__slider__under__slider">
-            <p>10 000 ₽</p>
-            <p>15 000 000 ₽</p>
-          </div>
-          <div class="main__credit__cal__block__left__vsnos">
-            <div class="main__credit__cal__block__left__vsnos__left">
-              <p class="main__credit__cal__block__left__future__textsecond">Первоначальный взнос</p>
-              <div class="main__credit__cal__block__left__vsnos__left__child">
+          <div class="main__cal__credit__input" id="range-slider"></div>
+          <div class="main__cal__credit__sliders">
+            <div class="main__cal__credit__contribution">
+              <p class="main__cal__credit__sliders__overtext">Первоначальный взнос</p>
+              <div class="main__cal__credit__contribution__data">
                 <p class="main__credit__cal__block__left__vsnos__left__child__texxt__one">950 000</p>
                 <label class="main__credit__cal__block__left__futurecar__input__father">
                   <input id="input-2" class="main__credit__cal__block__left__futurecar__input" value="950000" min="1" max="999999" type="number">
                 </label>
               </div>
               <div class="main__credit__cal__slider__2" id="range-slider"></div>
-              <div class="main__credit__cal__slider__under__slider">
-                <p>1000 ₽</p>
-                <p>1 000 000 ₽</p>
-              </div>
             </div>
-            <div class="main__credit__cal__block__left__vsnos__right">
-              <p class="main__credit__cal__block__left__future__textsecond">Срок кредитования</p>
-              <div class="main__credit__cal__block__left__vsnos__left__child">
+            <div class="main__cal__credit__contribution">
+              <p class="main__cal__credit__sliders__overtext">Срок кредитования</p>
+              <div class="main__cal__credit__contribution__data">
                 <p class="main__credit__cal__block__left__vsnos__left__texxt__two">24</p>
                 <label class="main__credit__cal__block__left__futurecar__input__father">
                   <input id="input-3" class="main__credit__cal__block__left__futurecar__input" value="24" type="text" type="number">
@@ -648,35 +639,31 @@
                 </label>
               </div>
               <div class="main__credit__cal__slider__3" id="range-slider"></div>
-              <div class="main__credit__cal__slider__under__slider">
-                <p>6 мес</p>
-                <p>60 мес</p>
-              </div>
             </div>
           </div>
-          <div class="main__credit__cal__block__left__last__btn">
-            <p class="main__credit__cal__block__left__last__btn__first__text">Ваш платеж:</p>
-            <p class="main__credit__cal__block__left__last__btn__second__text">от <span class="main__credit__cal__block__left__last__btn__second__text__span"></span> ₽/мес</p>
-            <p class="main__credit__cal__block__left__last__btn__third__text">Данные расчета предварительные и не являются точными</p>
+          <div class="main__cal__credit__sum">
+            <p class="main__cal__credit__sum__first__text">Ваш платеж:</p>
+            <p class="main__cal__credit__sum__your__payment">от <span class="main__credit__cal__block__left__last__btn__second__text__span"></span> ₽/мес</p>
+            <p class="main__cal__credit__sum__third__text">Данные расчета предварительные и не являются точными</p>
           </div>
         </div>
-        <div class="main__credit__cal__block__right">
-          <p class="main__credit__cal__block__right__text">Отправить предварительную заявку на одобрение</p>
-          <p class="main__credit__cal__block__right__description">Мы поможем подобрать лучшее предложение среди банков-партнеров</p>
-          <div class="main__credit__cal__block__right__contacts">
-            <div class="main__credit__cal__block__right__contacts__left">
+        <div class="main__cal__bid">
+          <p class="main__cal__bid__title">Отправить предварительную заявку на одобрение</p>
+          <p class="main__cal__bid__description">Мы поможем подобрать лучшее предложение среди банков-партнеров</p>
+          <div class="main__cal__bid__form">
+            <div class="main__cal__bid__name">
               <p>Ваше имя</p>
-              <input class="main__credit__cal__block__right__contacts__left__input" placeholder="Введите имя"/>
+              <input class="main__cal__bid__name__input" placeholder="Введите имя"/>
             </div>
-            <div class="main__credit__cal__block__right__contacts__right">
+            <div class="main__cal__bid__contact">
               <p>Номер телефона</p>
-              <input id="phone__mask" class="main__credit__cal__block__right__contacts__right__input" type="text" placeholder="+7 ___ ___ __ __"/>
+              <input id="phone__mask" class="main__cal__bid__contact__input" type="text" placeholder="+7 ___ ___ __ __"/>
             </div>
           </div>
-          <div class="main__credit__cal__block__right__main__button">
+          <div class="main__cal__bid__contact__send">
             <p>Отправить заявку</p>
           </div>
-          <p class="main__credit__cal__block__right__bottom__text">Заполняя данную форму, вы даете соглашение на рассмотрение ваших котиков и собачков. Это обязательно и и вы никак не сможете повлиять на это, в отделе разработки нехватает пушистеньких лапок!!!</p>
+          <p class="main__cal__bid__contact__bottomtext">Заполняя данную форму, вы даете соглашение на рассмотрение ваших котиков и собачков. Это обязательно и и вы никак не сможете повлиять на это, в отделе разработки нехватает пушистеньких лапок!!!</p>
         </div>
       </div>
     </section>

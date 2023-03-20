@@ -9,7 +9,7 @@ body {
   /* min-width: 1440px; */
 }
 
-h1 {
+.header__block__title {
   font-style: normal;
   font-weight: 500;
   font-size: 24px;
@@ -29,16 +29,16 @@ h1 {
   justify-content: space-between;
 }
 
-.header__block__right {
+.header__block__contacts {
   display: flex;
   align-items: center;
 }
 
-.header__block__right__item:not(:last-child) {
+.header__block__contact:not(:last-child) {
   margin-right: 88px;
 }
 
-.header__block__right__item__text {
+.header__block__contact__title {
   /* font-family: 'Museo Sans Cyrl'; */
   font-style: normal;
   font-weight: 500;
@@ -56,7 +56,7 @@ h1 {
   display: none;
 }
 
-.header__under__text {
+.header__block__subtext {
   font-style: normal;
   font-weight: 400;
   font-size: 14px;
@@ -64,6 +64,8 @@ h1 {
   /* identical to box height */
   color: #9CA0A6;
 }
+
+/* header */
 
 .nav {
   /* padding: 15px 0; */
@@ -78,11 +80,11 @@ h1 {
   justify-content: space-between;
 }
 
-.nav__block__left {
+.nav__block__elements {
   display: flex;
 }
 
-.nav__block__left__text {
+.nav__block__element {
   /* font-family: 'Museo Sans Cyrl'; */
   font-style: normal;
   font-weight: 400;
@@ -93,11 +95,11 @@ h1 {
   color: #404252;
 }
 
-.nav__block__left__text:not(:first-child) {
+.nav__block__element:not(:first-child) {
   margin-left: 20px;
 }
 
-.nav__block__left__text:hover {
+.nav__block__element:hover {
   color: #C92B18;
   border-bottom: 2px #C92B18 solid;
   cursor: pointer;
@@ -105,12 +107,12 @@ h1 {
   transition: 0.5s;
 }
 
-.nav__block__right {
+.nav__block__favorites {
   display: flex;
   align-items: center;
 }
 
-.nav__block__right__text {
+.nav__block__favorite {
   /* font-family: 'Museo Sans Cyrl'; */
   font-style: normal;
   font-weight: 400;
@@ -120,6 +122,8 @@ h1 {
   color: #404252;
   margin-left: 14px;
 }
+
+/* nav */
 
 .main__slider {
   /* background: #020204; */
@@ -140,7 +144,7 @@ h1 {
   justify-content: flex-start; */
 }
 
-.main__slider__block .main__slider__block__title {
+.main__slider__block__title {
   width: 466px;
   font-style: normal;
   font-weight: 600;
@@ -149,9 +153,6 @@ h1 {
   /* or 136% */
   color: #FFFFFF;
   margin-left: 114px;
-}
-
-.main__slider__block ul {
 }
 
 .main__slider__block li {
@@ -289,14 +290,14 @@ h1 {
   align-items: center !important;
 }
 
-
-
 .nice-select-small {
   width: 99px !important;
   padding-left: 8px !important;
   /* margin-right: 12px; */
   padding-right: 0px !important;
 }
+
+/* - */
 
 .main__buy {
   margin-top: 64px;
@@ -307,7 +308,6 @@ h1 {
   font-weight: 600;
   font-size: 44px;
   line-height: 49px;
-  /* identical to box height, or 112% */
   letter-spacing: 0.02em;
   color: #404252;
   text-align: center;
@@ -371,9 +371,6 @@ h1 {
 }
 
 .main__buy__marks__mark img {
-  /* padding-left: 17px;
-  padding-right: 17px;
-  /* padding-top: 23px; */
   padding-bottom: 17px;
 }
 
@@ -681,27 +678,27 @@ h1 {
   cursor: pointer;
 }
 
-
+/* - */
 
 .main__credit__cal {
   background-color: #F5F7FA;
 }
 
-.main__credit__cal__block {
+.main__cal__block {
   max-width: 1328px;
   margin: 0 auto;
   display: flex;
   justify-content: space-between;
 }
 
-.main__credit__cal__block__left {
+.main__cal__credit {
   padding-top: 32px;
   padding-bottom: 38px;
   margin-right: 85px;
   width: 652px;
 }
 
-.main__credit__cal__block__left__title {
+.main__cal__credit__title {
   font-style: normal;
   font-weight: 600;
   font-size: 32px;
@@ -711,7 +708,7 @@ h1 {
   color: #404252;
 }
 
-.main__credit__cal__block__left__description {
+.main__cal__credit__description {
   font-style: normal;
   font-weight: 400;
   font-size: 14px;
@@ -721,7 +718,7 @@ h1 {
   margin-top: 16px;
 }
 
-.main__credit__cal__block__left__future__text {
+.main__cal__credit__overtext {
   font-style: normal;
   font-weight: 400;
   font-size: 14px;
@@ -732,30 +729,10 @@ h1 {
   margin-bottom: 17px;
 }
 
-.main__credit__cal__block__left__future__textsecond {
-  font-style: normal;
-  font-weight: 400;
-  font-size: 14px;
-  line-height: 128%;
-  /* identical to box height, or 18px */
-  color: #404252;
-  margin-top: 45px;
-  margin-bottom: 17px;
-}
-
-.main__credit__cal__block__left__futurecar {
+.main__cal__credit__amount {
   display: flex;
   justify-content: space-between;
   align-items: center;
-}
-
-.main__credit__cal__block__left__futurecar .main__credit__cal__block__left__futurecar__text {
-  font-style: normal;
-  font-weight: 600;
-  font-size: 24px;
-  line-height: 128%;
-  /* identical to box height, or 31px */
-  color: #404252;
 }
 
 .main__credit__cal__block__left__futurecar__input {
@@ -840,51 +817,28 @@ h1 {
   background-color: #C92B18;
 }
 
-/* .noUi-handle::after {
-  content: "";
-  background-image: url(./img/slider.svg);
-  width: 100px;
-  height: 100px;
-} */
-
 .noUi-horizontal .noUi-handle:before {
+  content: "";
   width: 0;
   height: 0;
   border-left: 8px solid transparent;
   border-right: 8px solid transparent;
-  border-bottom: 8px solid var(--primary);
+  border-bottom: 8px solid #C92B18;
   top: 12px;
   left: -4px;
   background: 0 0;
+  cursor: grab;
 }
 
 .noUi-horizontal .noUi-handle:after {
+  content: "";
   top: 16px;
   left: -6px;
-  width: 20px;
-  height: 20px;
-  border: 5px solid var(--primary);
+  width: 10px;
+  height: 10px;
+  border: 5px solid #C92B18;
   border-radius: 50%;
-}
-
-.main__credit__cal__slider__under__slider {
-  display: flex;
-  justify-content: space-between;
-  margin-top: 8px;
-}
-
-.main__credit__cal__slider__under__slider p {
-  font-style: normal;
-  font-weight: 400;
-  font-size: 14px;
-  line-height: 128%;
-  /* identical to box height, or 18px */
-  color: #404252;
-}
-
-.noUi-handle::after,
-.noUi-handle::before {
-  display: none !important;
+  cursor: grab;
 }
 
 input::-webkit-outer-spin-button,
@@ -893,24 +847,29 @@ input::-webkit-inner-spin-button {
   margin: 0;
 }
 
-/* Firefox */
 input[type=number] {
   -moz-appearance: textfield;
 }
 
-.main__credit__cal__block__left__vsnos {
+.main__cal__credit__sliders {
   display: flex;
   justify-content: space-between;
 }
 
-.main__credit__cal__block__left__vsnos__left__child {
+.main__cal__credit__contribution__data {
   display: flex;
   align-items: center;
 }
 
-/* .main__credit__cal__block__left__vsnos__left__child:not(:last-child) {
-  margin-right: 24px;
-} */
+.main__cal__credit__sliders__overtext {
+  font-style: normal;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 128%;
+  color: #404252;
+  margin-top: 45px;
+  margin-bottom: 17px;
+}
 
 .main__credit__cal__block__left__vsnos__left__child__texxt__one { 
   font-style: normal;
@@ -934,20 +893,7 @@ input[type=number] {
   width: 100px;
 }
 
-/* .main__credit__cal__block__left__vsnos__left__child input {
-  background: #FFFFFF;
-  border: 1px solid #DAD3D3;
-  border-radius: 4px;
-  padding: 15px 16px;
-  outline: none;
-  font-style: normal;
-  font-weight: 400;
-  font-size: 14px;
-  line-height: 128%;
-  color: #404252;
-} */
-
-.main__credit__cal__block__left__last__btn {
+.main__cal__credit__sum {
   background: #FFFFFF;
   border: 2px solid #C92B18;
   border-radius: 8px;
@@ -958,7 +904,7 @@ input[type=number] {
   margin-top: 38px;
 }
 
-.main__credit__cal__block__left__last__btn__first__text {
+.main__cal__credit__sum__first__text {
   font-style: normal;
   font-weight: 400;
   font-size: 14px;
@@ -970,7 +916,7 @@ input[type=number] {
 }
 
 
-.main__credit__cal__block__left__last__btn__second__text {
+.main__cal__credit__sum__your__payment {
   font-style: normal;
   font-weight: 600;
   font-size: 24px;
@@ -983,7 +929,7 @@ input[type=number] {
   white-space: nowrap;
 }
 
-.main__credit__cal__block__left__last__btn__third__text {
+.main__cal__credit__sum__third__text {
   width: 249px;
   font-style: normal;
   font-weight: 400;
@@ -993,17 +939,14 @@ input[type=number] {
   color: #6E7277;
 }
 
-.main__credit__cal__block__left__vsnos__right {
-  margin-left: 24px;
-}
 
-.main__credit__cal__block__right {
+.main__cal__bid {
   background: #C92B18;
   padding: 32px 53px 136px 32px;
   width: 572px;
 }
 
-.main__credit__cal__block__right__text {
+.main__cal__bid__title {
   font-style: normal;
   font-weight: 600;
   font-size: 32px;
@@ -1013,7 +956,7 @@ input[type=number] {
   color: #FFFFFF;
 }
 
-.main__credit__cal__block__right__description {
+.main__cal__bid__description {
   font-style: normal;
   font-weight: 400;
   font-size: 14px;
@@ -1024,14 +967,16 @@ input[type=number] {
   width: 344px;
 }
 
-.main__credit__cal__block__right__contacts {
+.main__cal__bid__form {
   display: flex;
   justify-content: space-between;
   margin-top: 24px;
   gap: 16px;
 }
 
-.main__credit__cal__block__right__contacts p {
+/* main__cal__bid__form -> main__cal__bid__form */
+
+.main__cal__bid__form p {
   font-style: normal;
   font-weight: 400;
   font-size: 14px;
@@ -1040,11 +985,11 @@ input[type=number] {
   color: #FFFFFF;
 }
 
-.main__credit__cal__block__right__contacts__left {
+.main__cal__bid__name {
   width: 100%;
 }
 
-.main__credit__cal__block__right__contacts__left__input {
+.main__cal__bid__name__input {
   background: #FFFFFF;
   border: 1px solid #C92B18;
   /* Drop Shadow */
@@ -1056,11 +1001,12 @@ input[type=number] {
   width: 100%;
 }
 
-.main__credit__cal__block__right__contacts__right {
+
+.main__cal__bid__contact {
   width: 100%;
 }
 
-.main__credit__cal__block__right__contacts__right__input {
+.main__cal__bid__contact__input {
   background: #FFFFFF;
   border: 1px solid #C92B18;
   /* Drop Shadow */
@@ -1070,13 +1016,11 @@ input[type=number] {
   outline: none;
   margin-top: 10px;
   width: 100%;
-  /* margin-left: 16px; */
 }
 
-.main__credit__cal__block__right__main__button {
+.main__cal__bid__contact__send {
   background: #FFFFFF;
   border-radius: 8px;
-  /* width: 500px; */
   padding: 15px 0 14px 0;
   margin-top: 24px;
   font-style: normal;
@@ -1090,7 +1034,7 @@ input[type=number] {
   cursor: pointer;
 }
 
-.main__credit__cal__block__right__bottom__text {
+.main__cal__bid__contact__bottomtext {
   font-style: normal;
   font-weight: 400;
   font-size: 12px;
@@ -1101,6 +1045,7 @@ input[type=number] {
   width: 500px;
 }
 
+/* - */
 
 .main__map {
   background-color: #FFFFFF;
@@ -1445,11 +1390,11 @@ input[type=number] {
 }
 
 @media screen and (max-width: 1241px) {
-  .main__credit__cal__block__right {
+  .main__cal__bid {
     width: 500px;
   }  
 
-  .main__credit__cal__block__right__bottom__text {
+  .main__cal__bid__contact__bottomtext {
     width: 100%;
   }
 }
@@ -1461,7 +1406,7 @@ input[type=number] {
 }
 
 @media screen and (max-width: 1097px) {
-  .main__credit__cal__block__left {
+  .main__cal__credit {
     margin-right: 10px;
   }
 
@@ -1474,15 +1419,15 @@ input[type=number] {
   .header {
     padding: 15px 15px;
   }
-  .header__block__right__item:not(:last-child) {
+  .header__block__contact:not(:last-child) {
     margin-right: 30px;
   }
 
-  .header__block__right__item__text {
+  .header__block__contact__title {
     font-size: 19px;
   }
 
-  .header__under__text {
+  .header__block__subtext {
     font-size: 13px;
   }
 
@@ -1490,7 +1435,7 @@ input[type=number] {
     padding: 0 15px;
   }
 
-  .nav__block__left__text {
+  .nav__block__element {
     font-size: 16px;
   }
 
@@ -1538,11 +1483,6 @@ input[type=number] {
     margin-bottom: 10px !important;
   }
 
-  /* .main__buy {
-    padding-left: 15px;
-    padding-right: 15px;
-  } */
-
   .main__buy__selection {
     padding: 0 15px;
   }
@@ -1560,48 +1500,40 @@ input[type=number] {
     width: 280px;
   }
 
-  .main__credit__cal__block {
+  .main__cal__block {
     padding: 0 15px;
   }
 
-  .main__credit__cal__block__left {
+  .main__cal__credit {
     width: 50%;
     margin-right: 0;
     padding-right: 15px;
   }
 
-  .main__credit__cal__block__left__vsnos__left__child {
+  .main__cal__credit__contribution__data {
     display: flex;
     justify-content: space-between;
   }
 
-  .main__credit__cal__block__right {
+  .main__cal__bid {
     width: 50%;
     padding: 32px 14px 136px 14px;
   }
 
-  .main__credit__cal__block__right__bottom__text {
+  .main__cal__bid__contact__bottomtext {
     width: 100%;
   }
 
-  .main__credit__cal__block__right__contacts {
+  .main__cal__bid__form {
     flex-wrap: wrap;
   }
 
-  .main__credit__cal__block__left__vsnos {
+  .main__cal__credit__sliders {
     flex-wrap: wrap;
   }
 
-  .main__credit__cal__block__left__vsnos__left {
+  .main__cal__credit__contribution {
     width: 100%;
-  }
-
-  .main__credit__cal__block__left__vsnos__right {
-    width: 100%;
-  }
-
-  .main__credit__cal__block__left__vsnos__right {
-    margin-left: 0;
   }
 
   .main__map {
@@ -1632,7 +1564,7 @@ input[type=number] {
 }
 
 @media screen and (max-width: 945px) {
-  .main__credit__cal__block__left__last__btn {
+  .main__cal__credit__sum {
     flex-wrap: wrap;
     justify-content: flex-start;
   }
@@ -1643,7 +1575,7 @@ input[type=number] {
 }
 
 @media screen and (max-width: 900px) {
-  .header__block__right__item {
+  .header__block__contact {
     display: none;
   }
 
@@ -1720,7 +1652,7 @@ input[type=number] {
     justify-content: space-between;
   }
 
-  .main__credit__cal__block__left__last__btn {
+  .main__cal__credit__sum {
     flex-wrap: wrap;
   }
 
@@ -1728,7 +1660,7 @@ input[type=number] {
     width: 287px;
   }
 
-  .main__credit__cal__block__right__bottom__text {
+  .main__cal__bid__contact__bottomtext {
     width: 350px;
   }
 
@@ -1756,11 +1688,11 @@ input[type=number] {
     margin-bottom: 10px;
   }
 
-  .main__credit__cal__block__right__description {
+  .main__cal__bid__description {
     width: 100%;
   }
 
-  .main__credit__cal__block__right__bottom__text {
+  .main__cal__bid__contact__bottomtext {
     width: 100%;
   }
 
@@ -1782,7 +1714,7 @@ input[type=number] {
     flex-wrap: wrap;
   }  
 
-  .main__credit__cal__block__right__text {
+  .main__cal__bid__title {
     font-size: 29px;
   }
 }
@@ -1810,16 +1742,16 @@ input[type=number] {
 }
 
 @media screen and (max-width: 630px) {
-  .main__credit__cal__block {
+  .main__cal__block {
     flex-wrap: wrap;
   }  
 
-  .main__credit__cal__block__left {
+  .main__cal__credit {
     width: 100%;
     padding-right: 0;
   }
 
-  .main__credit__cal__block__right {
+  .main__cal__bid {
     width: 100%;
   }
 
@@ -1831,7 +1763,7 @@ input[type=number] {
     width: 240px;
   }
 
-  .main__credit__cal__block__left__last__btn {
+  .main__cal__credit__sum {
     flex-wrap:nowrap;
   }
 
@@ -1864,7 +1796,7 @@ input[type=number] {
     width: 100%;
   }
 
-  .main__credit__cal__block__left__last__btn {
+  .main__cal__credit__sum {
     flex-wrap: wrap;
   }
 }
@@ -1947,11 +1879,11 @@ input[type=number] {
     flex-wrap: wrap;
   }
 
-  .main__credit__cal__block__left {
+  .main__cal__credit {
     width: 100%;
   }
 
-  .main__credit__cal__block__right {
+  .main__cal__bid {
     width: 100%;
   }
 
@@ -2008,7 +1940,7 @@ input[type=number] {
   margin-top: 20px;
 }
 
-.main__credit__cal__block__right__bottom__text {
+.main__cal__bid__contact__bottomtext {
   width: 100%;
 }
 
@@ -2017,11 +1949,11 @@ input[type=number] {
   font-size: 25px;
 }
 
-.main__credit__cal__block__right__description {
+.main__cal__bid__description {
   width: 100%;
 }
 
-.main__credit__cal__block__right__text {
+.main__cal__bid__title {
   font-size: 25px;
 }
 
@@ -2048,11 +1980,11 @@ input[type=number] {
 }
 
 @media screen and (max-width: 320px) {
-  h1 {
+  .header__block__title {
     font-size: 16px;
   }
 
-  .header__under__text {
+  .header__block__subtext {
     font-size: 10px;
   }
 
@@ -2062,15 +1994,15 @@ input[type=number] {
     padding-left: 5px;
   }
 
-  .main__credit__cal__block__right__description {
+  .main__cal__bid__description {
     width: 100%;
   }
 
-  .main__credit__cal__block__right__bottom__text {
+  .main__cal__bid__contact__bottomtext {
     width: 100%;
   }
 
-  .main__credit__cal__block__right__text {
+  .main__cal__bid__title {
     font-size: 29px;
   }
 
@@ -2096,7 +2028,7 @@ input[type=number] {
     background-size: 150%;
   }
 
-  .main__credit__cal__block__right__text {
+  .main__cal__bid__title {
     font-size: 26px;
   }
 
