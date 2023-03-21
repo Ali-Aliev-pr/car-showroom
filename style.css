@@ -1091,9 +1091,9 @@ input[type=number] {
 
 .main__map__main__adres {
   /* width: 450px; */
-  /* width: 125%; */
+  width: 125%;
   background-color: #FFFFFF;
-  padding: 16px 0 0 20px;
+  padding: 16px 0 13px 20px;
 }
 
 .main__map__main__adres__selected {
@@ -1753,6 +1753,11 @@ input[type=number] {
     width: 100%;
   }
 
+  .main__map__main__adres {
+    width: 100%;
+    padding-right: 120px;
+  }
+
   .main__map__main__adres__description {
     width: 100%;
   }
@@ -1795,6 +1800,10 @@ input[type=number] {
 
   .main__buy__selection__cards__card__img {
     width: 260px;
+  }
+
+  .main__map__main__adres {
+    padding-right: 0px;
   }
 }
 
