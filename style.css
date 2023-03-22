@@ -1601,7 +1601,7 @@ input[type=number] {
     margin-right: 53px;
   }
 
-  .main__credit__cal__block__left__last__btn__third__text {
+  .main__cal__credit__sum__third__text {
     width: 100%;
   }
 
@@ -1614,9 +1614,11 @@ input[type=number] {
     justify-content: flex-start;
   }
 
-  .main__credit__cal__block__left__last__btn__third__text {
+  .main__cal__credit__sum__third__text {
     padding-left: 14px;
   }
+
+  /* main__cal__credit__sum__third__text */
 
   .nav__block__element {
     font-size: 14px;
@@ -1713,7 +1715,7 @@ input[type=number] {
     flex-wrap: wrap;
   }
 
-  .main__credit__cal__block__left__last__btn__third__text {
+  .main__cal__credit__sum__third__text {
     width: 287px;
   }
 
