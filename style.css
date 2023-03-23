@@ -200,6 +200,13 @@ body {
   height: 20px !important;
   background: #C92B18 !important;
   border-radius: 10px !important;
+  margin-bottom: -6px !important;
+}
+
+.swiper-pagination-bullet {
+  display: inline-block;
+  border-radius: 50%;
+  opacity: 1 !important;
 }
 
 .main__sellectors {
@@ -1233,17 +1240,16 @@ input[type=number] {
   justify-content: space-between;
 }
 
-.footer__block__header__left__text {
+.footer__block__header__title {
   font-style: normal;
   font-weight: 600;
   font-size: 24px;
   line-height: 29px;
-  /* identical to box height */
   color: #FFFFFF;
   margin-bottom: 4px;
 }
 
-.footer__block__header__left__under {
+.footer__block__header__undertext {
   font-style: normal;
   font-weight: 400;
   font-size: 14px;
@@ -1252,12 +1258,12 @@ input[type=number] {
   color: #9CA0A6;
 }
 
-.footer__block__header__right {
+.footer__block__header__adreses {
   display: flex;
   /* justify-content: space-between; */
 }
 
-.footer__block__header__right__item:not(:last-child) {
+.footer__block__header__adres:not(:last-child) {
   margin-right: 133px;
 }
 

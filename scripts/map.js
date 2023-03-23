@@ -2,11 +2,11 @@ let tabParents = document.querySelectorAll('.main__map__main__adreses');
 let tabss = document.querySelectorAll('.main__map__main__adres');
 let selectedTab = document.querySelector('.main__map__main__adres__selected');
 
+console.log(selectedTab)
+
 let data_a = [41.462599, 45.091376];
 let data_b = [41.693083, 44.801561];
 let data_c = [41.651108, 41.636267];
-
-console.log(selectedTab)
 
 function hideTab() {
   tabss.forEach(e => {
@@ -27,7 +27,7 @@ function showTab(i = 2) {
   if (window.map) {
     window.map.setCenter(selected)
   } 
-  console.log(selectedTab)
+  // console.log(selectedTab)
 }
 
 hideTab()
@@ -35,11 +35,13 @@ showTab()
 
 tabParents[0].addEventListener('click', (event) => {
   let select = event.target
+  console.log(select)
 
   selectedTab = select
   if (select) {
     tabss.forEach((e, i) => {
-      if (select === e) {
+      // console.log(e.dataset.geo)
+      if (select.dataset.geo === e.dataset.geo) {
         hideTab()
         showTab(i)
       }
