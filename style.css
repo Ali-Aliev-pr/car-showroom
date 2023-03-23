@@ -1267,7 +1267,7 @@ input[type=number] {
   margin-right: 133px;
 }
 
-.footer__block__header__right__item__text {
+.footer__block__header__title {
   font-style: normal;
   font-weight: 600;
   font-size: 20px;
@@ -1276,7 +1276,7 @@ input[type=number] {
   color: #FFFFFF;
 }
 
-.footer__block__header__right__item__under {
+.footer__block__header__undertext {
   font-style: normal;
   font-weight: 400;
   font-size: 14px;
@@ -1604,7 +1604,7 @@ input[type=number] {
     padding: 0 15px;
   }
 
-  .footer__block__header__right__item:not(:last-child) {
+  .footer__block__header__adres:not(:last-child) {
     margin-right: 53px;
   }
 
@@ -1774,6 +1774,10 @@ input[type=number] {
 
   .main__buy__title {
     font-size: 38px;
+  }
+
+  .footer__block__header__adreses {
+    display: none;
   }
 
 }
