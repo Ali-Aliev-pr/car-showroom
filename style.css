@@ -54,6 +54,7 @@ body {
 
 .header__block__right__item__phone {
   display: none;
+  /* padding-left: 39%; */
 }
 
 .header__block__subtext {
@@ -238,12 +239,12 @@ body {
   gap: 12px;
 }
 
-.main__sellectors__end {
+.main__selectors__search {
   display: flex;
   align-items: center;
 }
 
-.main__sellectors__end div {
+.main__selectors__search div {
   background: #C92B18;
   border-radius: 8px;
   width: 48px;
@@ -267,7 +268,7 @@ body {
   align-items: center;
 }
 
-.main__sellectors__end p {
+.main__selectors__search p {
   margin-right: 24px;
 }
 
@@ -825,7 +826,7 @@ body {
   border-right: 8px solid transparent;
   border-bottom: 8px solid #C92B18;
   top: 12px;
-  left: -4px;
+  left: -3px;
   background: 0 0;
   cursor: grab;
 }
@@ -833,7 +834,7 @@ body {
 .noUi-horizontal .noUi-handle:after {
   content: "";
   top: 16px;
-  left: -6px;
+  left: -5px;
   width: 10px;
   height: 10px;
   border: 5px solid #C92B18;
@@ -1636,6 +1637,7 @@ input[type=number] {
 
   .header__block__right__item__phone {
     display: block;
+    padding-left: 7%;
   }
 
   .nav {
@@ -2103,5 +2105,9 @@ input[type=number] {
   /* .main__map__main__left__block__adress {
     width: 288px;
   } */
+
+  .header__block__right__item__phone {
+    padding-left: 5%;
+  }
 
 }
