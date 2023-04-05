@@ -9,14 +9,6 @@ body {
   /* min-width: 1440px; */
 }
 
-.header__title {
-  font-style: normal;
-  font-weight: 500;
-  font-size: 24px;
-  line-height: 29px;
-  color: #404252;
-}
-
 .header {
   padding: 15px 0;
   background-color: #ffffff;
@@ -29,6 +21,14 @@ body {
   justify-content: space-between;
 }
 
+.header__wrapper-title {
+  font-style: normal;
+  font-weight: 500;
+  font-size: 24px;
+  line-height: 29px;
+  color: #404252;
+}
+
 .header__contacts {
   display: flex;
   align-items: center;
@@ -38,7 +38,7 @@ body {
   margin-right: 88px;
 }
 
-.header__contact__title {
+.header__contact-title {
   /* font-family: 'Museo Sans Cyrl'; */
   font-style: normal;
   font-weight: 500;
@@ -58,6 +58,15 @@ body {
 }
 
 .header__subtext {
+  font-style: normal;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 17px;
+  /* identical to box height */
+  color: #9CA0A6;
+}
+
+.header__contact-subtext {
   font-style: normal;
   font-weight: 400;
   font-size: 14px;
@@ -113,7 +122,7 @@ body {
   align-items: center;
 }
 
-.nav__favorite--text {
+.nav__favorite-text {
   /* font-family: 'Museo Sans Cyrl'; */
   font-style: normal;
   font-weight: 400;
@@ -1475,11 +1484,11 @@ input[type=number] {
     margin-right: 30px;
   }
 
-  .header__contact__title {
+  .header__contact-title {
     font-size: 19px;
   }
 
-  .header__subtext {
+  .header__contact-subtext {
     font-size: 13px;
   }
 
@@ -1631,7 +1640,7 @@ input[type=number] {
     font-size: 14px;
   }
 
-  .nav__favorite--text {
+  .nav__favorite-text {
     font: 14px;
   }
 }
@@ -2060,7 +2069,7 @@ input[type=number] {
 }
 
 @media screen and (max-width: 320px) {
-  .header__title {
+  .header__wrapper-title {
     font-size: 16px;
   }
 
