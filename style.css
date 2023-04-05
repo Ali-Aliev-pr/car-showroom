@@ -38,7 +38,7 @@ body {
   margin-right: 88px;
 }
 
-.header__contact-title {
+.header__contact__title {
   /* font-family: 'Museo Sans Cyrl'; */
   font-style: normal;
   font-weight: 500;
@@ -66,7 +66,7 @@ body {
   color: #9CA0A6;
 }
 
-.header__contact-subtext {
+.header__contact__subtext {
   font-style: normal;
   font-weight: 400;
   font-size: 14px;
