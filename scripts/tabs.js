@@ -2,14 +2,15 @@
   let tabsParent = document.querySelectorAll('.main__buy__selection__filter')
 let tabs = document.querySelectorAll('.main__buy__selection__filter__btn')
 let selected__tab = document.querySelector('.main__buy__selection__filter__btn__selected')
-// console.log(selected__tab.dataset.price)
+
 
 let cardsParent = document.querySelectorAll('.main__buy__selection__cards')
 let cards = document.querySelectorAll('.main__buy__selection__cards__card')
+console.log(cards)
 
 function cardsFilter() {
   cards.forEach((e) => {
-    console.log(e.dataset.price, selected__tab.dataset.price)
+    // console.log(e.dataset.price, selected__tab.dataset.price)
     if (+e.dataset.price > +selected__tab.dataset.price) {
       e.style.display = 'none'
     } else {
