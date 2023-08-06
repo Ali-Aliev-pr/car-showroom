@@ -14,11 +14,14 @@ body {
   background-color: #ffffff;
 }
 
+.flex {
+  display: flex;
+  justify-content: space-between;
+}
+
 .header-wrapper {
   max-width: 1328px;
   margin: 0 auto;
-  display: flex;
-  justify-content: space-between;
 }
 
 .header-title {
